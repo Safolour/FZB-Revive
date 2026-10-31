@@ -1,0 +1,1 @@
+function decoration:lobby/tick

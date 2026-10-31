@@ -1,0 +1,1 @@
+$execute as @e[tag=hitable,tag=!res_skill_damaged,scores={zombie.health=1..},nbt={CustomName:$(name)}] unless data entity @s data.name run function weapon:range/gun/gun/resonance/skill/custom_name_exact

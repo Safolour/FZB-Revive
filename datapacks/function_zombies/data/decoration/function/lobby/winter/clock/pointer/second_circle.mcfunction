@@ -1,0 +1,13 @@
+particle end_rod ~ ~ ~ 0.0 0.0 -1 0.05 0 force
+particle end_rod ~ ~ ~ -0.5 0.0 -0.87 0.05 0 force
+particle end_rod ~ ~ ~ -0.87 0.0 -0.5 0.05 0 force
+particle end_rod ~ ~ ~ -1.0 0.0 -0 0.05 0 force
+particle end_rod ~ ~ ~ -0.87 0.0 0.5 0.05 0 force
+particle end_rod ~ ~ ~ -0.5 0.0 0.87 0.05 0 force
+particle end_rod ~ ~ ~ -0.0 0.0 1 0.05 0 force
+particle end_rod ~ ~ ~ 0.5 0.0 0.87 0.05 0 force
+particle end_rod ~ ~ ~ 0.87 0.0 0.5 0.05 0 force
+particle end_rod ~ ~ ~ 1.0 0.0 0 0.05 0 force
+particle end_rod ~ ~ ~ 0.87 0.0 -0.5 0.05 0 force
+particle end_rod ~ ~ ~ 0.5 0.0 -0.87 0.05 0 force
+particle end_rod ~ ~ ~ 0.0 0.0 -1 0.05 0 force

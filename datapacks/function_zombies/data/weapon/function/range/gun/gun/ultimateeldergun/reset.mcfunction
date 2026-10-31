@@ -1,0 +1,10 @@
+
+scoreboard objectives remove weapon.gun_ultimateeldergun
+scoreboard objectives remove weapon.gun_ultimateeldergun_ammo
+scoreboard objectives remove weapon.gun_ultimateeldergun_clip_ammo
+scoreboard objectives remove weapon.gun_ultimateeldergun_rate
+scoreboard objectives remove weapon.gun_ultimateeldergun_rate0
+scoreboard objectives remove weapon.gun_ultimateeldergun_reload
+scoreboard objectives remove weapon.gun_ultimateeldergun_slot
+
+scoreboard objectives remove weapon.gun_ultimateeldergun_time

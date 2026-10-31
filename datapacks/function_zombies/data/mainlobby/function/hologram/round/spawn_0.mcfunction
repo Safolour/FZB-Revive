@@ -1,0 +1,3 @@
+
+execute if score @s map matches 3 run data modify entity @s CustomName set value [{translate:zb.mainlobby.leaderboard.map.5,color:green},{text:" "},{translate:zb.mainlobby.leaderboard.map.6,color:gray}]
+execute if score @s map matches 4 run data modify entity @s CustomName set value [{translate:zb.mainlobby.leaderboard.map.5,color:gray},{text:" "},{translate:zb.mainlobby.leaderboard.map.6,color:green}]

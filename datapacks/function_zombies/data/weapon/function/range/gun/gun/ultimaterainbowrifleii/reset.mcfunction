@@ -1,0 +1,8 @@
+
+scoreboard objectives remove weapon.gun_ultimaterainbowrifleii
+scoreboard objectives remove weapon.gun_ultimaterainbowrifleii_ammo
+scoreboard objectives remove weapon.gun_ultimaterainbowrifleii_clip_ammo
+scoreboard objectives remove weapon.gun_ultimaterainbowrifleii_rate
+scoreboard objectives remove weapon.gun_ultimaterainbowrifleii_rate0
+scoreboard objectives remove weapon.gun_ultimaterainbowrifleii_reload
+scoreboard objectives remove weapon.gun_ultimaterainbowrifleii_slot

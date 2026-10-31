@@ -1,0 +1,1 @@
+$return run scoreboard players get #const_ln($(temp)) ln_const

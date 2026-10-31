@@ -1,0 +1,7 @@
+execute if score @s weapon.gun_color matches 0 run particle dust{color:-65536,scale:1.5} ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]
+execute if score @s weapon.gun_color matches 1 run particle dust{color:-33024,scale:1.5} ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]
+execute if score @s weapon.gun_color matches 2 run particle dust{color:-256,scale:1.5} ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]
+execute if score @s weapon.gun_color matches 3 run particle dust{color:-16711936,scale:1.5} ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]
+execute if score @s weapon.gun_color matches 4 run particle dust{color:-16711681,scale:1.5} ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]
+execute if score @s weapon.gun_color matches 5 run particle dust{color:-16776961,scale:1.5} ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]
+execute if score @s weapon.gun_color matches 6 run particle dust{color:-8453889,scale:1.5} ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]

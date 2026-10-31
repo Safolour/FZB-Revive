@@ -1,0 +1,3 @@
+
+# 和录像一样用胡萝卜钓竿做底物品（右键切换，见 map:perk/ashes_bullet）；物品数量 = 保留档位（1/80/60/40/20），所以去掉耐久、堆叠上限放到 99；lore 第 4 行随档位切换（map:perk/ashes_bullet/switch）
+$item replace entity @s container.$(slot) with carrot_on_a_stick[item_model="gunpowder",!max_damage,max_stack_size=99,custom_data={slot:$(slot),perk:ashes_bullet,tag:["perk","ashes_bullet","clear"]},custom_name=[{translate:"zb.item.perk.ashes_bullet.1"}],lore=[[{translate:"zb.item.perk.ashes_bullet.lore0"}],[{translate:"zb.item.perk.ashes_bullet.lore1"}],[{text:""}],[{translate:"zb.item.perk.ashes_bullet.lore3"}],[{text:""}],[{translate:"zb.item.perk.ashes_bullet.lore2"}],[{text:""}],[{translate:zb.item.perk.lore0}]]]

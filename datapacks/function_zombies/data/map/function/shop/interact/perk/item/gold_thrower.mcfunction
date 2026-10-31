@@ -1,0 +1,2 @@
+# 售货机菜单里的金钱丢失（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:sunflower,count:1,Slot:$(slot)b,components:{custom_data:{perk:gold_thrower,tag:["clear","minecart","gold_thrower"]},custom_name:[{translate:"zb.shop.item.gold_thrower",color:red,italic:false}],lore:[[{translate:"zb.shop.item.gold_thrower.lore0"}],[{translate:"zb.shop.item.gold_thrower.lore1"}],[{translate:"zb.shop.item.gold_thrower.lore2"}],[{translate:"zb.shop.item.gold_thrower.lore3"}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

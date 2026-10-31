@@ -1,0 +1,31 @@
+
+data modify storage round powerup set value {\
+    maxammo:[\
+            {round:1,wave:1},\
+            {round:2,wave:1}\
+        ],\
+    instakill:[\
+            {round:1,wave:1},{round:3,wave:1},\
+            {round:2,wave:1}\
+        ],\
+    doublegold:[\
+            {round:1,wave:1},\
+            {round:3,wave:2}\
+        ],\
+    bonusgold:[\
+            {round:1,wave:2},\
+            {round:3,wave:2}\
+        ],\
+    carpenter:[\
+            {round:1,wave:1},\
+            {round:3,wave:2}\
+        ],\
+    shoppingspree:[\
+            {round:1,wave:2},\
+            {round:3,wave:2}\
+        ],\
+    purification:[\
+            {round:1,wave:1},\
+            {round:3,wave:2}\
+        ]\
+}

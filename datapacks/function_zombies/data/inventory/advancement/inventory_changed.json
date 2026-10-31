@@ -1,0 +1,12 @@
+{
+    "criteria": {
+      "example": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+        }
+      }
+    },
+    "rewards": {
+      "function": "inventory:inventory_changed"
+    }
+  }

@@ -1,0 +1,8 @@
+
+item replace entity @s armor.head with netherite_helmet[equippable={asset_id:netherite,equip_sound:{sound_id:"",range:-1},slot:head},item_name=[[{translate:"zb.inventory.armor.netherite_helmet"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+item replace entity @s armor.chest with netherite_chestplate[equippable={asset_id:netherite,equip_sound:{sound_id:"",range:-1},slot:chest},item_name=[[{translate:"zb.inventory.armor.netherite_chestplate"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+item replace entity @s armor.legs with netherite_leggings[equippable={asset_id:netherite,equip_sound:{sound_id:"",range:-1},slot:legs},item_name=[[{translate:"zb.inventory.armor.netherite_leggings"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+item replace entity @s armor.feet with netherite_boots[equippable={asset_id:netherite,equip_sound:{sound_id:"",range:-1},slot:feet},item_name=[[{translate:"zb.inventory.armor.netherite_boots"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+
+scoreboard players set @s armor.armor 20
+scoreboard players set @s armor.toughness 12

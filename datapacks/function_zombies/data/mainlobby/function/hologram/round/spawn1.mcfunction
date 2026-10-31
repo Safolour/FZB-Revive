@@ -1,0 +1,2 @@
+
+$summon armor_stand ~ ~0.75 ~ {Marker:1b,Invisible:1b,Small:1b,CustomNameVisible:1b,CustomName:[{text:"§e$(number). §r"},{text:"$(player)"},{text:"§7 - §r"},{text:"§e$(value)§r"}],Tags:["hologram","lobby","text","move","$(type)"]}

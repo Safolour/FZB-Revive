@@ -1,0 +1,1 @@
+$particle end_rod ^$(sstemp1) ^$(sstemp2) ^$(sstemp3) .0 .0 .0 10000 1 force

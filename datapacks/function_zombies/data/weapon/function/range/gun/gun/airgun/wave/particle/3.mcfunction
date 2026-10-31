@@ -1,0 +1,32 @@
+
+$execute positioned ^ ^0.0125 ^-1 rotated ~-35 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~-30 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~-25 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~-20 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~-15 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~-10 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~-5 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~0 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~5 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~10 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~15 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~20 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~25 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~30 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+$execute positioned ^ ^0.0125 ^-1 rotated ~35 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.15 0 force @a
+return fail
+$execute positioned ^ ^ ^-1 rotated ~-35 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~-30 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~-25 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~-20 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~-15 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~-10 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~-5 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~0 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~5 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~10 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~15 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~20 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~25 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~30 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a
+$execute positioned ^ ^ ^-1 rotated ~35 ~ run particle end_rod ^ ^ ^1 $(x) $(y) $(z) 0.1625 0 force @a

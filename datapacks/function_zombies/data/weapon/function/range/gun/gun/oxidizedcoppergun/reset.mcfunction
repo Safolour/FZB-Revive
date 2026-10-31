@@ -1,0 +1,7 @@
+scoreboard objectives remove weapon.gun_oxidizedcoppergun
+scoreboard objectives remove weapon.gun_oxidizedcoppergun_ammo
+scoreboard objectives remove weapon.gun_oxidizedcoppergun_clip_ammo
+scoreboard objectives remove weapon.gun_oxidizedcoppergun_rate
+scoreboard objectives remove weapon.gun_oxidizedcoppergun_rate0
+scoreboard objectives remove weapon.gun_oxidizedcoppergun_reload
+scoreboard objectives remove weapon.gun_oxidizedcoppergun_slot

@@ -1,0 +1,12 @@
+
+{
+    "criteria": {
+      "example": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+          }
+        }
+      }
+    }
+}

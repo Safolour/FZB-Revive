@@ -1,0 +1,3 @@
+# 由 spawn_0 调用：$(type)/$(map) 已换算成新版下标
+$execute as @n[type=armor_stand,tag=hologram,tag=lobby,tag=text,tag=root,tag=$(tag)] at @s run summon armor_stand ~ ~0.75 ~ {Marker:1b,Invisible:1b,Small:1b,CustomNameVisible:1b,CustomName:[{translate:zb.mainlobby.leaderboard.type.$(type)}],Tags:["hologram","lobby","text","move","$(tag)"]}
+$execute as @n[type=armor_stand,tag=hologram,tag=lobby,tag=text,tag=root,tag=$(tag)] at @s run summon armor_stand ~ ~1.125 ~ {Marker:1b,Invisible:1b,Small:1b,CustomNameVisible:1b,CustomName:[{translate:zb.mainlobby.leaderboard.map.$(map),color:aqua}],Tags:["hologram","lobby","text","move","$(tag)"]}

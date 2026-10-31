@@ -1,0 +1,8 @@
+
+scoreboard objectives remove weapon.gun_ultimatemusicgun
+scoreboard objectives remove weapon.gun_ultimatemusicgun_ammo
+scoreboard objectives remove weapon.gun_ultimatemusicgun_clip_ammo
+scoreboard objectives remove weapon.gun_ultimatemusicgun_rate
+scoreboard objectives remove weapon.gun_ultimatemusicgun_rate0
+scoreboard objectives remove weapon.gun_ultimatemusicgun_reload
+scoreboard objectives remove weapon.gun_ultimatemusicgun_slot

@@ -1,0 +1,4 @@
+
+$execute if score @p[tag=target] gold < price shop.price run data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:custom_name" set value [{translate:zb.shop.armor_shop.armor.name.$(armor),color:red,italic:false}]
+$execute if score @p[tag=target] gold < price shop.price run data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[-1] set value {translate:zb.shop.armor_shop.lore2}
+$execute if score @p[tag=target] gold >= price shop.price run data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[-1] set value {translate:zb.shop.armor_shop.lore3}

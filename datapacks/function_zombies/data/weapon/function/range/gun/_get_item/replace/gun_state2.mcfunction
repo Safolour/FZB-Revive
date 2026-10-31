@@ -1,0 +1,10 @@
+
+$execute unless score damage0_last weapon.state = damage0 weapon.state run data modify storage weapon root.damage set value "§8$(damage0_last).$(damage1_last) ➜ §a$(damage0).$(damage1)§r"
+$execute unless score damage1_last weapon.state = damage1 weapon.state run data modify storage weapon root.damage set value "§8$(damage0_last).$(damage1_last) ➜ §a$(damage0).$(damage1)§r"
+$execute unless score ammo_last weapon.state = ammo weapon.state run data modify storage weapon root.ammo set value "§8$(ammo_last) ➜ §a$(ammo)§r"
+$execute unless score clip_ammo_last weapon.state = clip_ammo weapon.state run data modify storage weapon root.clip_ammo set value "§8$(clip_ammo_last) ➜ §a$(clip_ammo)§r"
+$execute unless score rate0_last weapon.state = rate0 weapon.state run data modify storage weapon root.rate set value "§8$(rate0_last).$(rate1_last)s ➜ §a$(rate0).$(rate1)§r"
+$execute unless score rate1_last weapon.state = rate1 weapon.state run data modify storage weapon root.rate set value "§8$(rate0_last).$(rate1_last)s ➜ §a$(rate0).$(rate1)§r"
+$execute unless score reload0_last weapon.state = reload0 weapon.state run data modify storage weapon root.reload set value "§8$(reload0_last).$(reload1_last)s ➜ §a$(reload0).$(reload1)§r"
+$execute unless score reload1_last weapon.state = reload1 weapon.state run data modify storage weapon root.reload set value "§8$(reload0_last).$(reload1_last)s ➜ §a$(reload0).$(reload1)§r"
+$execute unless score bullet_last weapon.state = bullet weapon.state run data modify storage weapon root.bullet set value "§8$(bullet_last) ➜ §a$(bullet)§r"

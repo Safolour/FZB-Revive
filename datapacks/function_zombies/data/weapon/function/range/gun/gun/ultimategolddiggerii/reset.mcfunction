@@ -1,0 +1,8 @@
+
+scoreboard objectives remove weapon.gun_ultimategolddiggerii
+scoreboard objectives remove weapon.gun_ultimategolddiggerii_ammo
+scoreboard objectives remove weapon.gun_ultimategolddiggerii_clip_ammo
+scoreboard objectives remove weapon.gun_ultimategolddiggerii_rate
+scoreboard objectives remove weapon.gun_ultimategolddiggerii_rate0
+scoreboard objectives remove weapon.gun_ultimategolddiggerii_reload
+scoreboard objectives remove weapon.gun_ultimategolddiggerii_slot

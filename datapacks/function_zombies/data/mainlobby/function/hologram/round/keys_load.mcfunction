@@ -1,0 +1,1 @@
+data modify storage stat root.leaderboard_index set value {type:{best_round:0,death:1,door_open:2,fastest_win:3,gun_accuracy:4,gun_headshot_accuracy:5,gun_hit:6,gun_headshot:7,gun_shot:8,player_revived:9,times_knock_down:10,total_round:11,win:12,window_repaired:13,zombie_kill:14},map:{"3":5,"4":6},mode:{"3":"6_0","4":"6_0"}}

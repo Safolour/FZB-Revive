@@ -1,0 +1,9 @@
+execute if score #idx monhan matches 1 run return run function map:area/lab/monhan/page/ammo/show
+execute if score #idx monhan matches 2 run return run function map:area/lab/monhan/page/showcase/give
+execute if score #idx monhan matches 3 run return run function map:area/lab/monhan/page/showcase/clear_ask
+execute if score #idx monhan matches 4 run return run function map:area/lab/monhan/page/revive/show
+execute if score #idx monhan matches 5 run return run function map:area/lab/monhan/page/temperature/show
+execute if score #idx monhan matches 6 run return run function map:area/lab/monhan/page/lucky/show
+execute if score #idx monhan matches 7 run return run function map:area/lab/monhan/page/lucky/manage
+execute if score #idx monhan matches 8 run return run function map:area/lab/monhan/page/perk/show
+execute if score #idx monhan matches 9 run return run function map:area/lab/monhan/page/tips/show

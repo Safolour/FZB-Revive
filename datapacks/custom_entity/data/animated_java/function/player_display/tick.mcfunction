@@ -1,0 +1,1 @@
+function animated_java:player_display/root/on_tick

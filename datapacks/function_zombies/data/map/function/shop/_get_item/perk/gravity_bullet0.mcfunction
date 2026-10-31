@@ -1,0 +1,2 @@
+
+$item replace entity @s container.$(slot) with ink_sac[item_model="ink_sac",custom_data={slot:$(slot),perk:gravity_bullet,tag:["perk","gravity_bullet","clear"]},custom_name=[{translate:"zb.item.perk.gravity_bullet.1"}],lore=[[{translate:"zb.item.perk.gravity_bullet.lore0"}],[{translate:"zb.item.perk.gravity_bullet.lore1",with:[{translate:"zb.item.skill.gyrokineticwand.name"}]}],[{translate:"zb.item.perk.gravity_bullet.lore2"}],[{text:""}],[{translate:zb.item.perk.lore0}]]]

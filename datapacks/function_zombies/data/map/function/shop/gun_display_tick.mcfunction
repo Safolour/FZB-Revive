@@ -1,0 +1,8 @@
+# 购买点附近的展示物丢失时恢复；按枪名匹配，避免其他物品阻止恢复。
+$execute positioned ^ ^0.5 ^ unless entity @e[type=item,tag=shop,tag=$(item),tag=item,distance=..1] if entity @s[tag=pistol] run summon item ~ ~0.25 ~ {Age:-32768,PickupDelay:-1,Invulnerable:1b,NoGravity:1b,Item:{id:"minecraft:wooden_hoe",count:1},Tags:["shop","pistol","item"]}
+$execute positioned ^ ^0.5 ^ unless entity @e[type=item,tag=shop,tag=$(item),tag=item,distance=..1] if entity @s[tag=rifle] run summon item ~ ~0.25 ~ {Age:-32768,PickupDelay:-1,Invulnerable:1b,NoGravity:1b,Item:{id:"minecraft:stone_hoe",count:1},Tags:["shop","rifle","item"]}
+$execute positioned ^ ^0.5 ^ unless entity @e[type=item,tag=shop,tag=$(item),tag=item,distance=..1] if entity @s[tag=shotgun] run summon item ~ ~0.25 ~ {Age:-32768,PickupDelay:-1,Invulnerable:1b,NoGravity:1b,Item:{id:"minecraft:iron_hoe",count:1},Tags:["shop","shotgun","item"]}
+$execute positioned ^ ^0.5 ^ unless entity @e[type=item,tag=shop,tag=$(item),tag=item,distance=..1] if entity @s[tag=magnum] run summon item ~ ~0.25 ~ {Age:-32768,PickupDelay:-1,Invulnerable:1b,NoGravity:1b,Item:{id:"minecraft:golden_hoe",count:1},Tags:["shop","magnum","item"]}
+$execute positioned ^ ^0.5 ^ unless entity @e[type=item,tag=shop,tag=$(item),tag=item,distance=..1] if entity @s[tag=machinegun] run summon item ~ ~0.25 ~ {Age:-32768,PickupDelay:-1,Invulnerable:1b,NoGravity:1b,Item:{id:"minecraft:diamond_hoe",count:1},Tags:["shop","machinegun","item"]}
+$execute positioned ^ ^0.5 ^ as @e[type=item,tag=shop,tag=$(item),tag=item,distance=..1,nbt=!{Invulnerable:1b}] run data merge entity @s {Invulnerable:1b}
+$execute positioned ^ ^0.5 ^ run team join collision @e[type=item,tag=shop,tag=$(item),tag=item,distance=..1,team=!collision]

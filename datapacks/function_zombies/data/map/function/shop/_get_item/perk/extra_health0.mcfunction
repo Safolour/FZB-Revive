@@ -1,0 +1,3 @@
+
+$item replace entity @s container.$(slot) with gold_nugget[item_model="gold_nugget",custom_data={lv:1,slot:$(slot),perk:extra_health,tag:["perk","extra_health","upgradable","clear"]},custom_name=[{translate:zb.item.perk.extra_health.1}],lore=[[{translate:zb.item.perk.extra_health.lore0}],[{translate:zb.item.perk.extra_health.lore1}],[{text:""}],[{translate:zb.item.perk.lore0}]]]
+scoreboard players set @s perk.extra_health 0

@@ -1,0 +1,2 @@
+# 售货机菜单里的引力子弹（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:ink_sac,count:1,Slot:$(slot)b,components:{custom_data:{perk:gravity_bullet,tag:["clear","minecart","gravity_bullet"]},custom_name:[{translate:"zb.shop.item.gravity_bullet",color:red,italic:false}],lore:[[{translate:"zb.shop.item.gravity_bullet.lore0"}],[{translate:"zb.shop.item.gravity_bullet.lore1",with:[{translate:"zb.item.skill.gyrokineticwand.name"}]}],[{translate:"zb.shop.item.gravity_bullet.lore2"}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

@@ -1,0 +1,1 @@
+$tp ~$(sstemp12) ~$(sstemp22) ~$(sstemp32)

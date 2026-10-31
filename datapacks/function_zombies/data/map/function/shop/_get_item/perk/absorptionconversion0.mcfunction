@@ -1,0 +1,3 @@
+
+# 买到后是药水瓶（录像：胡萝卜钓竿 + item_model=potion，伤害加成模式红色 16711680，隐藏药水效果提示），右键切换模式时换颜色和第 1 行 lore
+$item replace entity @s container.$(slot) with carrot_on_a_stick[item_model="potion",potion_contents={custom_color:16711680},tooltip_display={hidden_components:["potion_contents"]},custom_data={slot:$(slot),perk:absorptionconversion,tag:["perk","absorptionconversion","clear"]},custom_name=[{translate:"zb.item.perk.absorptionconversion.1"}],lore=[[{translate:"zb.item.perk.absorptionconversion.lore0"}],[{text:""}],[{translate:"zb.item.perk.absorptionconversion.lore2"}],[{text:""}],[{translate:zb.item.perk.lore0}]]]

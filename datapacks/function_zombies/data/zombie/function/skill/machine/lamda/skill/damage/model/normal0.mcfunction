@@ -1,0 +1,8 @@
+execute on passengers if entity @s[tag=aj.lamda.bone.head] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/head"}}}
+execute on passengers if entity @s[tag=aj.lamda.bone.body] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/body"}}}
+execute on passengers if entity @s[tag=aj.lamda.bone.left_leg] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/left_leg"}}}
+execute on passengers if entity @s[tag=aj.lamda.bone.right_leg] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/right_leg"}}}
+execute on passengers if entity @s[tag=aj.lamda.bone.left_arm_top] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/left_arm_top"}}}
+execute on passengers if entity @s[tag=aj.lamda.bone.left_arm_bottom] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/left_arm_bottom"}}}
+execute on passengers if entity @s[tag=aj.lamda.bone.right_arm_top] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/right_arm_top"}}}
+execute on passengers if entity @s[tag=aj.lamda.bone.right_arm_bottom] run data merge entity @s {item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"animated_java:blueprint/lamda/right_arm_bottom"}}}

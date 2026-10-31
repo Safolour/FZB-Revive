@@ -1,0 +1,2 @@
+# 售货机菜单里的额外生命值（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:gold_nugget,count:1,Slot:$(slot)b,components:{custom_data:{perk:extra_health,tag:["clear","minecart","extra_health"]},custom_name:[{translate:"zb.shop.item.extra_health",color:red,italic:false}],lore:[[{translate:"zb.shop.item.extra_health.lore0"}],[{translate:"zb.shop.item.extra_health.lore1"}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

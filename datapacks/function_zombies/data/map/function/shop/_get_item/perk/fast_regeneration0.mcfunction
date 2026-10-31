@@ -1,0 +1,2 @@
+
+$item replace entity @s container.$(slot) with glowstone_dust[item_model="glowstone_dust",custom_data={slot:$(slot),perk:fast_regeneration,tag:["perk","fast_regeneration","clear"]},custom_name=[{translate:"zb.item.perk.fast_regeneration.1"}],lore=[[{translate:"zb.item.perk.fast_regeneration.lore0"}],[{translate:"zb.item.perk.fast_regeneration.lore1",with:[{translate:"zb.item.skill.heal.name"}]}],[{text:""}],[{translate:zb.item.perk.lore0}]]]

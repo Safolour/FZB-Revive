@@ -1,0 +1,1 @@
+function zombie:skill/nether/guardian/warped/0/skill/laser/tick

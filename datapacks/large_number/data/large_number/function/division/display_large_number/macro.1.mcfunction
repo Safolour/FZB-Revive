@@ -1,0 +1,1 @@
+$data modify storage large_number:math temp1 set value [$(temp1)$(temp2)$(temp3)f,$(temp4)$(temp5)$(temp6)f,$(temp7)$(temp8)$(temp9)f,$(temp10)$(temp11)$(temp12)f]

@@ -1,0 +1,1 @@
+$data remove storage large_number:math s1[$(temp1)]

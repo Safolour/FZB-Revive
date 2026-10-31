@@ -1,0 +1,7 @@
+scoreboard objectives remove weapon.gun_ultimateaurora
+scoreboard objectives remove weapon.gun_ultimateaurora_ammo
+scoreboard objectives remove weapon.gun_ultimateaurora_clip_ammo
+scoreboard objectives remove weapon.gun_ultimateaurora_rate
+scoreboard objectives remove weapon.gun_ultimateaurora_rate0
+scoreboard objectives remove weapon.gun_ultimateaurora_reload
+scoreboard objectives remove weapon.gun_ultimateaurora_slot

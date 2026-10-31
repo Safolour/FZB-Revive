@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 81,
+        "description": "FZB PL 自动化测试辅助包（仅测试用，发布前移除）"
+    }
+}

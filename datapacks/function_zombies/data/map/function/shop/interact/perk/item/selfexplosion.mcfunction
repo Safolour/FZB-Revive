@@ -1,0 +1,2 @@
+# 售货机菜单里的原地爆炸（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:tnt,count:1,Slot:$(slot)b,components:{custom_data:{perk:selfexplosion,tag:["clear","minecart","selfexplosion"]},custom_name:[{translate:"zb.shop.item.selfexplosion",color:red,italic:false}],lore:[[{translate:"zb.shop.item.selfexplosion.lore0"}],[{translate:"zb.shop.item.selfexplosion.lore1",color:green,italic:false}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

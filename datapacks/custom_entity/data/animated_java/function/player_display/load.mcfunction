@@ -1,0 +1,1 @@
+function animated_java:player_display/on_load

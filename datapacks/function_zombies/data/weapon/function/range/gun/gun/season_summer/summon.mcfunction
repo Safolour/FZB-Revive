@@ -1,0 +1,17 @@
+scoreboard players remove @s weapon.gun_season_summer_ammo 1
+scoreboard players remove @s weapon.gun_season_summer_clip_ammo 1
+function weapon:range/gun/slot/count {gun:"season_summer"}
+function weapon:range/gun/slot/xp_lv {gun:"season_summer"}
+execute unless score @s weapon.gun_season_summer_rate0 = @s weapon.gun_season_summer_rate0 run scoreboard players operation @s weapon.gun_season_summer_rate0 = rate weapon.gun_season_summer
+scoreboard players operation @s weapon.gun_season_summer_rate = @s weapon.gun_season_summer_rate0
+scoreboard players operation @s weapon.use = uuid weapon.gun_season_summer
+playsound block.fire.ambient player @a ~ ~ ~ 1 1
+function weapon:range/gun/gun/season_summer/summon0
+scoreboard players add @s weapon.gun_season_summer_heat 1
+scoreboard players set @s weapon.use 0
+
+#scoreboard players add shoot test 1
+
+# BEGIN ECHO RECORD
+execute unless score extrashot weapon.gun_season_summer matches 1.. run function weapon:range/skill/skill/echo/record {gun:"season_summer"}
+# END ECHO RECORD

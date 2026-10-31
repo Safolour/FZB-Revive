@@ -1,0 +1,1 @@
+$data modify storage weapon bp.comp."minecraft:lore" append value {translate:"zb.item.gun.blueprint.lore.$(n)",with:[{text:"§a$(v)§r"},{translate:"zb.item.gun.blueprint.lore.2",color:"$(c)",italic:false,with:[{text:"$(p)",color:"$(c)"}]}]}

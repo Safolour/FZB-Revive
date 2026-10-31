@@ -1,0 +1,7 @@
+scoreboard objectives remove weapon.gun_season_summer
+scoreboard objectives remove weapon.gun_season_summer_ammo
+scoreboard objectives remove weapon.gun_season_summer_clip_ammo
+scoreboard objectives remove weapon.gun_season_summer_rate
+scoreboard objectives remove weapon.gun_season_summer_rate0
+scoreboard objectives remove weapon.gun_season_summer_reload
+scoreboard objectives remove weapon.gun_season_summer_slot

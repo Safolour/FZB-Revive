@@ -1,0 +1,39 @@
+execute if entity @a[scores={stat.player=1},distance=..3] as @a[scores={stat.player=1},distance=..3] at @s run function zombie:skill/nether/warped/soul_flame/damage
+
+playsound entity.blaze.shoot record @a ~ ~ ~ 1.5 0
+playsound block.lava.extinguish record @a ~ ~ ~ 1.5 1
+playsound entity.cat.hiss record @a ~ ~ ~ 1.5 1
+playsound entity.wolf.shake record @a ~ ~ ~ 1.5 1
+playsound entity.wolf.shake record @a ~ ~ ~ 1.5 0
+
+particle explosion ~ ~1 ~ 0 0 0 0 1 force @a[scores={particle=0..1}]
+particle flash ~ ~1 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+
+particle soul_fire_flame ~ ~0.1 ~ 0 0 0 0.2 10 force @a[scores={particle=0}]
+
+particle soul_fire_flame ~ ~0.1 ~ 0.0 0.0 -2.0 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -0.5 0.0 -1.94 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -0.96 0.0 -1.75 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -1.37 0.0 -1.46 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -1.69 0.0 -1.07 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -1.9 0.0 -0.62 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -2.0 0.0 -0.13 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -1.96 0.0 0.37 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -1.81 0.0 0.85 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -1.54 0.0 1.27 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -1.18 0.0 1.62 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -0.74 0.0 1.86 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ -0.25 0.0 1.98 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 0.25 0.0 1.98 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 0.74 0.0 1.86 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 1.18 0.0 1.62 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 1.54 0.0 1.27 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 1.81 0.0 0.85 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 1.96 0.0 0.37 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 2.0 0.0 -0.13 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 1.9 0.0 -0.62 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 1.69 0.0 -1.07 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 1.37 0.0 -1.46 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 0.96 0.0 -1.75 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 0.5 0.0 -1.94 0.1 0 force @a[scores={particle=0}]
+particle soul_fire_flame ~ ~0.1 ~ 0.0 0.0 -2.0 0.1 0 force @a[scores={particle=0}]

@@ -1,0 +1,2 @@
+# 售货机菜单里的冰冻子弹（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:ghast_tear,count:1,Slot:$(slot)b,components:{custom_data:{perk:frozen_bullet,tag:["clear","minecart","frozen_bullet"]},custom_name:[{translate:"zb.shop.item.frozen_bullet",color:red,italic:false}],lore:[[{translate:"zb.shop.item.frozen_bullet.lore0"}],[{translate:"zb.shop.item.frozen_bullet.lore1"}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

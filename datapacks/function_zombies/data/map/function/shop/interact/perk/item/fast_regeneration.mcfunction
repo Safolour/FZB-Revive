@@ -1,0 +1,2 @@
+# 售货机菜单里的快速恢复（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:glowstone_dust,count:1,Slot:$(slot)b,components:{custom_data:{perk:fast_regeneration,tag:["clear","minecart","fast_regeneration"]},custom_name:[{translate:"zb.shop.item.fast_regeneration",color:red,italic:false}],lore:[[{translate:"zb.shop.item.fast_regeneration.lore0"}],[{translate:"zb.shop.item.fast_regeneration.lore1",with:[{translate:"zb.item.skill.heal.name"}]}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

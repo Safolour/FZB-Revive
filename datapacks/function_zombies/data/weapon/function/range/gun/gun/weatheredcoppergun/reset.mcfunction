@@ -1,0 +1,7 @@
+scoreboard objectives remove weapon.gun_weatheredcoppergun
+scoreboard objectives remove weapon.gun_weatheredcoppergun_ammo
+scoreboard objectives remove weapon.gun_weatheredcoppergun_clip_ammo
+scoreboard objectives remove weapon.gun_weatheredcoppergun_rate
+scoreboard objectives remove weapon.gun_weatheredcoppergun_rate0
+scoreboard objectives remove weapon.gun_weatheredcoppergun_reload
+scoreboard objectives remove weapon.gun_weatheredcoppergun_slot

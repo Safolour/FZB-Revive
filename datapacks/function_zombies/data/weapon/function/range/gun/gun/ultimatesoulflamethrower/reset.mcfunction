@@ -1,0 +1,7 @@
+scoreboard objectives remove weapon.gun_ultimatesoulflamethrower
+scoreboard objectives remove weapon.gun_ultimatesoulflamethrower_ammo
+scoreboard objectives remove weapon.gun_ultimatesoulflamethrower_clip_ammo
+scoreboard objectives remove weapon.gun_ultimatesoulflamethrower_rate
+scoreboard objectives remove weapon.gun_ultimatesoulflamethrower_rate0
+scoreboard objectives remove weapon.gun_ultimatesoulflamethrower_reload
+scoreboard objectives remove weapon.gun_ultimatesoulflamethrower_slot

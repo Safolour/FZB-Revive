@@ -1,0 +1,2 @@
+# 售货机菜单里的伤害吸收转化（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:dragon_breath,count:1,Slot:$(slot)b,components:{custom_data:{perk:absorptionconversion,tag:["clear","minecart","absorptionconversion"]},custom_name:[{translate:"zb.shop.item.absorptionconversion",color:red,italic:false}],lore:[[{translate:"zb.shop.item.absorptionconversion.lore0"}],[{translate:"zb.shop.item.absorptionconversion.lore1"}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

@@ -1,0 +1,5 @@
+kill @e[type=armor_stand,tag=skill.observereye0]
+kill @e[type=marker,tag=skill.observereye0]
+kill @e[type=armor_stand,tag=skill.observereye1]
+kill @e[type=marker,tag=skill.observereye1]
+kill @e[type=marker,tag=skill.observereye.target]

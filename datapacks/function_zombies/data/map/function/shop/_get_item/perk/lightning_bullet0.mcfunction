@@ -1,0 +1,2 @@
+
+$item replace entity @s container.$(slot) with beacon[item_model="beacon",custom_data={slot:$(slot),perk:lightning_bullet,tag:["perk","lightning_bullet","clear"]},custom_name=[{translate:"zb.item.perk.lightning_bullet.1"}],lore=[[{translate:"zb.item.perk.lightning_bullet.lore0"}],[{translate:"zb.item.perk.lightning_bullet.lore1",with:[{translate:"zb.item.skill.lightningrod.name"}]}],[{text:""}],[{translate:zb.item.perk.lore0}]]]

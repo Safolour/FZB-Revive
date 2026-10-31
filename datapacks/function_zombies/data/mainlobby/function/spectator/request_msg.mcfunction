@@ -1,0 +1,2 @@
+# 发给游戏内的非旁观玩家；名字和整条消息的 change_page 是录像里的写法，用来屏蔽名字默认的 /tell 点击
+$tellraw @a[scores={system.room=4..,stat.player=1..3}] {translate:"zb.mainlobby.spectator.1",with:[{selector:"@s",color:"white",click_event:{action:"change_page",page:1}},{translate:"zb.mainlobby.spectator.1.0",click_event:{action:"run_command",command:"trigger dialogue0.trigger set $(accept)"}},{translate:"zb.mainlobby.spectator.1.1",click_event:{action:"run_command",command:"trigger dialogue0.trigger set $(reject)"}}],click_event:{action:"change_page",page:1}}

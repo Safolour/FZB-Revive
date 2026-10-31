@@ -1,0 +1,8 @@
+
+scoreboard objectives remove weapon.gun_ultimateshotgun
+scoreboard objectives remove weapon.gun_ultimateshotgun_ammo
+scoreboard objectives remove weapon.gun_ultimateshotgun_clip_ammo
+scoreboard objectives remove weapon.gun_ultimateshotgun_rate
+scoreboard objectives remove weapon.gun_ultimateshotgun_rate0
+scoreboard objectives remove weapon.gun_ultimateshotgun_reload
+scoreboard objectives remove weapon.gun_ultimateshotgun_slot

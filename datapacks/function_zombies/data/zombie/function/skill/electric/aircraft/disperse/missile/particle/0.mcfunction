@@ -1,0 +1,7 @@
+particle end_rod ^0.0 ^0.0 ^-0.3 0 0 0 10000 1 force @s[scores={particle=0}]
+particle end_rod ^-0.26 ^0.0 ^-0.15 0 0 0 10000 1 force @s[scores={particle=0}]
+particle end_rod ^-0.26 ^0.0 ^0.15 0 0 0 10000 1 force @s[scores={particle=0}]
+particle end_rod ^-0.0 ^0.0 ^0.3 0 0 0 10000 1 force @s[scores={particle=0}]
+particle end_rod ^0.26 ^0.0 ^0.15 0 0 0 10000 1 force @s[scores={particle=0}]
+particle end_rod ^0.26 ^0.0 ^-0.15 0 0 0 10000 1 force @s[scores={particle=0}]
+particle end_rod ^0.0 ^0.0 ^-0.3 0 0 0 10000 1 force @s[scores={particle=0}]

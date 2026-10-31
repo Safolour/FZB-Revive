@@ -1,0 +1,2 @@
+# 售货机菜单里的灰烬子弹（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:gunpowder,count:1,Slot:$(slot)b,components:{custom_data:{perk:ashes_bullet,tag:["clear","minecart","ashes_bullet"]},custom_name:[{translate:"zb.shop.item.ashes_bullet",color:red,italic:false}],lore:[[{translate:"zb.shop.item.ashes_bullet.lore0"}],[{translate:"zb.shop.item.ashes_bullet.lore1"}],[{text:""}],[{translate:"zb.shop.item.ashes_bullet.lore2"}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

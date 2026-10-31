@@ -1,0 +1,16 @@
+
+kill @e[type=skeleton,tag=window_point,tag=forge]
+summon skeleton 68 31 85 {Tags:["window_point","forge"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 60 31 71 {Tags:["window_point","forge"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 64 32 57 {Tags:["window_point","forge"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 72 31 75 {Tags:["window_point","forge"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 84 31 81 {Tags:["window_point","forge"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 86 35 63 {Tags:["window_point","forge","firge_side1"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 71 42 61 {Tags:["window_point","forge","firge_side1"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 73 45 88 {Tags:["window_point","forge","firge_side1"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 85 42 67 {Tags:["window_point","forge","firge_side1"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 97 39 88 {Tags:["window_point","forge","firge_side1"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 83 44 97 {Tags:["window_point","forge","firge_side1"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+summon skeleton 93 47 95 {Tags:["window_point","forge","firge_side1"],PersistenceRequired:true,NoAI:1b,Silent:1b,active_effects:[{id:"resistance",duration:-1,amplifier:4,show_particles:false},{id:"invisibility",duration:-1,show_particles:false}]}
+#team join game.player @e[type=skeleton,tag=window_point]
+execute as @e[type=skeleton,tag=window_point] run attribute @s burning_time base set 0

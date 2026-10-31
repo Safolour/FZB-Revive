@@ -1,0 +1,1 @@
+$data modify storage weapon bp.comp."minecraft:custom_name" set value {translate:"zb.item.gun.blueprint.name",with:[{translate:"zb.item.gun.blueprint.lore.2",color:"$(c)",italic:false,with:[{text:"$(p)",color:"$(c)"}]}]}

@@ -1,0 +1,10 @@
+
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon_ammo
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon_clip_ammo
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon_rate
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon_rate0
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon_reload
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon_slot
+
+scoreboard objectives remove weapon.gun_ultimatesnowballcannon_time

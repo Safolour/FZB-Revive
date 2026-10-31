@@ -1,0 +1,16 @@
+scoreboard objectives remove weapon.gun_rainbowrocketlauncher
+scoreboard objectives remove weapon.gun_rainbowrocketlauncher_ammo
+scoreboard objectives remove weapon.gun_rainbowrocketlauncher_clip_ammo
+scoreboard objectives remove weapon.gun_rainbowrocketlauncher_rate
+scoreboard objectives remove weapon.gun_rainbowrocketlauncher_rate0
+scoreboard objectives remove weapon.gun_rainbowrocketlauncher_reload
+scoreboard objectives remove weapon.gun_rainbowrocketlauncher_slot
+scoreboard objectives remove weapon.rainbowrocketlauncher_born
+scoreboard objectives remove weapon.rainbowrocketlauncher_dist
+scoreboard objectives remove weapon.rainbowrocketlauncher_steps
+scoreboard objectives remove weapon.rainbowrocketlauncher_pierce
+scoreboard objectives remove weapon.rainbowrocketlauncher_stop
+kill @e[tag=rainbowrocketlauncher_proj]
+scoreboard objectives remove weapon.rrl_frame
+scoreboard objectives remove weapon.rrl_born
+kill @e[tag=rainbowrocketlauncher_explosion]

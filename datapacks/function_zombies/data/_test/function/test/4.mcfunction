@@ -1,0 +1,2 @@
+data modify storage luckychest item set value \
+ [{id:zapper,item:diamond_pickaxe},{id:eldergun,item:shears},{id:soaker,item:diamond_hoe},{id:snowballcannon,item:diamond_shovel},{id:flamethrower,item:golden_hoe},{id:rainbowrifle,item:golden_shovel},{id:golddigger,item:golden_pickaxe},{id:doubleshotgun,item:flint_and_steel}]

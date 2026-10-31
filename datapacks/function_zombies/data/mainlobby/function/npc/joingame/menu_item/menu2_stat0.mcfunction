@@ -1,0 +1,10 @@
+
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[0].with set value [{text:"§a$(total_round)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[1].with set value [{text:"§a$(win)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[2].with set value [{text:"§a$(best_round)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[4].with set value [{text:"§a$(zombie_kill)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[5].with set value [{text:"§a$(player_revived)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[6].with set value [{text:"§a$(door_open)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[7].with set value [{text:"§a$(window_repaired)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[8].with set value [{text:"§a$(times_knock_down)§r"}]
+$data modify entity @s Items[{Slot:$(slot)b}].components."minecraft:lore"[9].with set value [{text:"§a$(death)§r"}]

@@ -1,0 +1,2 @@
+# 售货机菜单里的快速开火（价格和状态由 menu1_0 填写）
+$data modify entity @s Items append value {id:redstone,count:1,Slot:$(slot)b,components:{custom_data:{perk:quick_fire,tag:["clear","minecart","quick_fire"]},custom_name:[{translate:"zb.shop.item.quick_fire",color:red,italic:false}],lore:[[{translate:"zb.shop.item.quick_fire.lore0"}],[{translate:"zb.shop.item.quick_fire.lore1",color:green,italic:false}],[{text:""}],[{translate:zb.shop.item.lore1}],[{text:""}],[{text:""}]]}}

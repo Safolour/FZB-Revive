@@ -1,0 +1,3 @@
+
+$execute if score type map matches 3 run item replace entity @s container.$(slot) with gray_dye[custom_data={slot:$(slot),tag:["perk_slot","clear","slot"]},custom_name=[{translate:"zb.item.perk_slot.name.$(count)"}],lore=[[{translate:"zb.item.perk_slot.$(map)_lore.0"}],[{translate:"zb.item.perk_slot.$(map)_lore.1"}],[{translate:"zb.item.perk_slot.$(map)_lore.2"}],[{translate:"zb.item.perk_slot.$(map)_lore.3"}],[{translate:"zb.item.perk_slot.$(map)_lore.4"}]]]
+$execute if score type map matches 4 run item replace entity @s container.$(slot) with gray_dye[custom_data={slot:$(slot),tag:["perk_slot","clear","slot"]},custom_name=[{translate:"zb.item.perk_slot.name.$(count)"}],lore=[[{translate:"zb.item.perk_slot.$(map)_lore.0"}]]]

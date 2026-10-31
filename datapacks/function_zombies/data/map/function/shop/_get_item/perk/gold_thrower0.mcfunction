@@ -1,0 +1,2 @@
+
+$item replace entity @s container.$(slot) with sunflower[item_model="sunflower",custom_data={slot:$(slot),perk:gold_thrower,tag:["perk","gold_thrower","clear"]},custom_name=[{translate:"zb.item.perk.gold_thrower.1"}],lore=[[{translate:"zb.item.perk.gold_thrower.lore0"}],[{translate:"zb.item.perk.gold_thrower.lore1"}],[{translate:"zb.item.perk.gold_thrower.lore2"}],[{translate:"zb.item.perk.gold_thrower.lore3"}],[{text:""}],[{translate:zb.item.perk.lore0}]]]

@@ -1,0 +1,8 @@
+
+item replace entity @s armor.head with golden_helmet[equippable={asset_id:gold,equip_sound:{sound_id:"",range:-1},slot:head},item_name=[[{translate:"zb.inventory.armor.golden_helmet"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+item replace entity @s armor.chest with golden_chestplate[equippable={asset_id:gold,equip_sound:{sound_id:"",range:-1},slot:chest},item_name=[[{translate:"zb.inventory.armor.golden_chestplate"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+item replace entity @s armor.legs with golden_leggings[equippable={asset_id:gold,equip_sound:{sound_id:"",range:-1},slot:legs},item_name=[[{translate:"zb.inventory.armor.golden_leggings"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+item replace entity @s armor.feet with golden_boots[equippable={asset_id:gold,equip_sound:{sound_id:"",range:-1},slot:feet},item_name=[[{translate:"zb.inventory.armor.golden_boots"}]],custom_data={tag:["armor","clear"]},enchantment_glint_override=false,enchantments={binding_curse:1},tooltip_display={hidden_components:[enchantments]}]
+
+scoreboard players set @s armor.armor 11
+scoreboard players set @s armor.toughness 0

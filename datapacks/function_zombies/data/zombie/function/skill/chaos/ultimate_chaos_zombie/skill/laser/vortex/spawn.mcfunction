@@ -1,0 +1,4 @@
+summon marker ^1.0 ^1.4 ^0.5 {Tags:["mob.skill","skill.ultimatechaoszombie","skill.ultimatechaoszombie.laser","skill.ultimatechaoszombie.laser.vortex","skill.ultimatechaoszombie.laser.vortex1","chosen"]}
+summon marker ^ ^2.4 ^0.5 {Tags:["mob.skill","skill.ultimatechaoszombie","skill.ultimatechaoszombie.laser","skill.ultimatechaoszombie.laser.vortex","skill.ultimatechaoszombie.laser.vortex2","chosen"]}
+summon marker ^-1.4 ^1.2 ^0.5 {Tags:["mob.skill","skill.ultimatechaoszombie","skill.ultimatechaoszombie.laser","skill.ultimatechaoszombie.laser.vortex","skill.ultimatechaoszombie.laser.vortex3","chosen"]}
+summon marker ^ ^0.4 ^0.5 {Tags:["mob.skill","skill.ultimatechaoszombie","skill.ultimatechaoszombie.laser","skill.ultimatechaoszombie.laser.vortex","skill.ultimatechaoszombie.laser.vortex4","chosen"]}

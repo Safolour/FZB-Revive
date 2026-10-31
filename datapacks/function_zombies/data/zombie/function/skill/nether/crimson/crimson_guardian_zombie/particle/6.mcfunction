@@ -1,0 +1,5 @@
+particle dust{color:[1,0,0],scale:1} ^-0.48 ^-0.1 ^0.0 0 0 0 0 1 force @a[scores={particle=0}]
+particle dust{color:[1,0.5,0],scale:1} ^-0.384 ^0.02 ^0.1 0 0 0 0 1 force @a[scores={particle=0}]
+particle dust{color:[1,1,0],scale:1} ^-0.288 ^0.14 ^0.2 0 0 0 0 1 force @a[scores={particle=0}]
+particle dust{color:[1,1,0.5],scale:1} ^-0.192 ^0.26 ^0.3 0 0 0 0 1 force @a[scores={particle=0}]
+particle dust{color:[1,1,1],scale:1} ^-0.096 ^0.38 ^0.4 0 0 0 0 1 force @a[scores={particle=0}]

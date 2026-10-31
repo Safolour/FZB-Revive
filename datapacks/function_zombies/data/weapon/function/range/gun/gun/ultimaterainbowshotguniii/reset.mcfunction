@@ -1,0 +1,7 @@
+scoreboard objectives remove weapon.gun_ultimaterainbowshotguniii
+scoreboard objectives remove weapon.gun_ultimaterainbowshotguniii_ammo
+scoreboard objectives remove weapon.gun_ultimaterainbowshotguniii_clip_ammo
+scoreboard objectives remove weapon.gun_ultimaterainbowshotguniii_rate
+scoreboard objectives remove weapon.gun_ultimaterainbowshotguniii_rate0
+scoreboard objectives remove weapon.gun_ultimaterainbowshotguniii_reload
+scoreboard objectives remove weapon.gun_ultimaterainbowshotguniii_slot

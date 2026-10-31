@@ -1,0 +1,15 @@
+scoreboard players add timer area.floor.timer 1
+
+execute store result score random area.floor.timer run random value 0..9
+execute unless score timer area.floor.timer matches 790.. if score random area.floor.timer matches 0 run scoreboard players add timer area.floor.timer 2
+execute unless score timer area.floor.timer matches 790.. if score random area.floor.timer matches 1 run scoreboard players remove timer area.floor.timer 2
+scoreboard players reset random area.floor.timer
+
+execute if score timer area.floor.timer matches 800 run function map:area/lab/floor/nether/crimson/0
+execute if score timer area.floor.timer matches 840 run function map:area/lab/floor/nether/crimson/1
+execute if score timer area.floor.timer matches 880 run function map:area/lab/floor/nether/crimson/2
+execute if score timer area.floor.timer matches 880 run scoreboard players set timer area.floor.timer 0
+
+execute if score timer area.floor.timer matches 840..880 as @e at @s run function map:area/lab/floor/nether/crimson/tick0
+
+particle crimson_spore 300 92 150 15 5 20 0.02 30 force @a[scores={particle=0}]

@@ -1,0 +1,2 @@
+
+$item replace entity @s container.$(slot) with heart_of_the_sea[item_model="heart_of_the_sea",custom_data={slot:$(slot),perk:neutralization_bullet,tag:["perk","neutralization_bullet","clear"]},custom_name=[{translate:"zb.item.perk.neutralization_bullet.1"}],lore=[[{translate:"zb.item.perk.neutralization_bullet.lore0",with:[{translate:"zb.item.gun.flamethrower.name"}]}],[{translate:"zb.item.perk.neutralization_bullet.lore1"}],[{text:""}],[{translate:"zb.item.perk.neutralization_bullet.lore2"}],[{text:""}],[{translate:zb.item.perk.lore0}]]]

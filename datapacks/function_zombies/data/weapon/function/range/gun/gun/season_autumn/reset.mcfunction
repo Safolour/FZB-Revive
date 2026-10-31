@@ -1,0 +1,7 @@
+scoreboard objectives remove weapon.gun_season_autumn
+scoreboard objectives remove weapon.gun_season_autumn_ammo
+scoreboard objectives remove weapon.gun_season_autumn_clip_ammo
+scoreboard objectives remove weapon.gun_season_autumn_rate
+scoreboard objectives remove weapon.gun_season_autumn_rate0
+scoreboard objectives remove weapon.gun_season_autumn_reload
+scoreboard objectives remove weapon.gun_season_autumn_slot

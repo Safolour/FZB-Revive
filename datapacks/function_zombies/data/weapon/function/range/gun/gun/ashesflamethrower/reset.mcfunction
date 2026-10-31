@@ -1,0 +1,9 @@
+
+scoreboard objectives remove weapon.gun_ashesflamethrower
+scoreboard objectives remove weapon.gun_ashesflamethrower_ammo
+scoreboard objectives remove weapon.gun_ashesflamethrower_clip_ammo
+scoreboard objectives remove weapon.gun_ashesflamethrower_rate
+scoreboard objectives remove weapon.gun_ashesflamethrower_rate0
+scoreboard objectives remove weapon.gun_ashesflamethrower_reload
+scoreboard objectives remove weapon.gun_ashesflamethrower_slot
+function weapon:range/gun/gun/ashesflamethrower/proj/reset

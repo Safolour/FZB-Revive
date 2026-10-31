@@ -1,0 +1,9 @@
+scoreboard players add @s area.floor.effectcooldown 1
+execute if score @s area.floor.effectcooldown matches 10.. run scoreboard players set @s area.floor.effectcooldown 0
+
+execute unless score @s area.floor.effectcooldown matches 0 run return 0
+
+execute align xyz if block ~ ~-1 ~ soul_soil run return run function map:area/lab/floor/nether/warped/effect/player0
+execute align xyz if block ~ ~-2 ~ soul_soil run return run function map:area/lab/floor/nether/warped/effect/player0
+execute align xyz if block ~ ~ ~ soul_fire run function map:area/lab/floor/nether/warped/effect/player0
+execute align xyz if block ~ ~-1 ~ soul_fire run function map:area/lab/floor/nether/warped/effect/player0

@@ -1,0 +1,3 @@
+scoreboard players add number zombie.nether.guardian.skill 1
+scoreboard players set cooldown zombie.nether.guardian.skill 120
+function zombie:skill/nether/guardian/crimson/0/skill/shockwave/init

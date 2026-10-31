@@ -1,0 +1,8 @@
+
+scoreboard objectives remove weapon.gun_ultimaterocketlauncher
+scoreboard objectives remove weapon.gun_ultimaterocketlauncher_ammo
+scoreboard objectives remove weapon.gun_ultimaterocketlauncher_clip_ammo
+scoreboard objectives remove weapon.gun_ultimaterocketlauncher_rate
+scoreboard objectives remove weapon.gun_ultimaterocketlauncher_rate0
+scoreboard objectives remove weapon.gun_ultimaterocketlauncher_reload
+scoreboard objectives remove weapon.gun_ultimaterocketlauncher_slot

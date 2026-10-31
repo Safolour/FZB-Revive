@@ -1,0 +1,5 @@
+particle dust_color_transition{from_color:255,to_color:65535,scale:2} ~0.241481 ~ ~-0.064705 0 0 0 0 1 force @a[scores={particle=0..1}]
+particle dust_color_transition{from_color:255,to_color:65535,scale:2} ~0.013084 ~ ~-0.249657 0 0 0 0 1 force @a[scores={particle=0..1}]
+particle dust_color_transition{from_color:255,to_color:65535,scale:2} ~-0.233395 ~ ~-0.089592 0 0 0 0 1 force @a[scores={particle=0..1}]
+particle dust_color_transition{from_color:255,to_color:65535,scale:2} ~-0.157330 ~ ~0.194286 0 0 0 0 1 force @a[scores={particle=0..1}]
+particle dust_color_transition{from_color:255,to_color:65535,scale:2} ~0.136160 ~ ~0.209668 0 0 0 0 1 force @a[scores={particle=0..1}]
