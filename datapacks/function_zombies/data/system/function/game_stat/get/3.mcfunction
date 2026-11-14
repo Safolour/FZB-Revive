@@ -1,3 +1,4 @@
+execute if score #invalid fzb.attr matches 1 run return 0
 
 
 $execute store result score times_knock_down system.stat run data get storage stat root.player.$(type).$(name).times_knock_down

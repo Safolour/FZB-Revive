@@ -1,7 +1,28 @@
-
+# Keep protected health out of damage accounting, including non-weapon score damage.
+execute if entity @s[tag=firelord.p2.apostle,tag=!firelord.p2.unlocked] run return run scoreboard players operation @s zombie.health = @s zombie.health0
+execute if entity @s[tag=p5.raytarget] at @s run function zombie:skill/nether/firelord/p5/hazards/ray_target_hit
+execute if entity @s[tag=skill.firelord] run function zombie:skill/nether/firelord/phase_busy
+execute if entity @s[tag=skill.titan,tag=titan.eclipse.cast] run return run function zombie:skill/creation/titan/lock_health
+# Shield also restores scoreboard damage from non-gun sources.
+execute if entity @s[tag=skill.firelord.shield,tag=!firelord.returning] at @s run function zombie:skill/nether/firelord/shield/take_damage
+execute if entity @s[tag=skill.firelord.shield] run return run scoreboard players operation @s zombie.health = @s zombie.health0
+execute if entity @s[tag=skill.firelord,tag=firelord.circle.active,tag=!skill.firelord.shield.used,scores={zombie.health=..33333}] run tag @s add firelord.circle.pending
+execute if entity @s[tag=skill.firelord,tag=firelord.circle.pending] run scoreboard players set @s zombie.health 33333
+execute if entity @s[tag=skill.firelord,tag=!skill.firelord.shield.used,scores={zombie.health=..33333}] run scoreboard players set @s zombie.health 33333
+execute if entity @s[tag=skill.firelord,tag=!firelord.circle.active,tag=!firelord.phase.busy,tag=!skill.firelord.shield.used,scores={zombie.health=..33333}] at @s run function zombie:skill/nether/firelord/shield/begin
+# P3 to P4 at one third of starting health; finish an active circle before switching.
+execute if entity @s[tag=skill.firelord,tag=firelord.p3,tag=!firelord.p4,tag=firelord.circle.active,scores={zombie.health=..16666}] run tag @s add firelord.p4.pending
+execute if entity @s[tag=firelord.p4.pending] run scoreboard players set @s zombie.health 16666
+execute if entity @s[tag=firelord.p4.pending,tag=!firelord.circle.active] run tag @s remove firelord.p4.pending
+execute if entity @s[tag=skill.firelord,tag=firelord.p3,tag=!firelord.p4,scores={zombie.health=..16666}] run scoreboard players set @s zombie.health 16666
+execute if entity @s[tag=skill.firelord,tag=firelord.p3,tag=!firelord.p4,tag=!firelord.circle.active,tag=!firelord.phase.busy,tag=!firelord.p4.pending,scores={zombie.health=..16666}] at @s run function zombie:skill/nether/firelord/p4/begin
+execute if entity @s[tag=skill.origin] at @s run function zombie:skill/creation/origin/lightning/lock_health
+execute if entity @s[type=zombie,tag=skill.titan,tag=!titan.eclipse.used,scores={zombie.health=..37500}] at @s run function zombie:skill/creation/titan/phase_lock
+execute if entity @s[type=slime,tag=skill.titan.eclipse,nbt={HurtTime:10s}] at @s run function zombie:skill/creation/titan/eclipse/hurt
 scoreboard players operation damage zombie.health = @s zombie.health0
 scoreboard players operation damage zombie.health -= @s zombie.health
 execute if score @s zombie.health0 = @s zombie.health0 run scoreboard players operation @s zombie.health0 = @s zombie.health
+execute if entity @s[tag=setting.dummy] run return run function mainlobby:setting/dummy/hit
 
 execute if entity @s[type=zombie,tag=skill.ultimatechaoszombie.lightning] if score @s zombie.chaos.ultimate_chaos_zombie.skill_lightningrange matches ..150 at @s run function zombie:skill/chaos/ultimate_chaos_zombie/skill/lightning/range/remove
 execute if entity @s[type=slime,tag=skill.ultimatechaoszombie.large_tnt] at @s run function zombie:skill/chaos/ultimate_chaos_zombie/skill/attack_tnt/tnt/clear

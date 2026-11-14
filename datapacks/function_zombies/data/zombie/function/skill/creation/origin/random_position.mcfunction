@@ -1,0 +1,84 @@
+kill @e[type=marker,tag=origin.candidate]
+execute positioned 288.5 92 130.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 134.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 138.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 142.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 146.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 150.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 154.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 158.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 162.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 166.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 288.5 92 170.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 130.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 134.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 138.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 142.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 146.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 150.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 154.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 158.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 162.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 166.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 292.5 92 170.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 130.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 134.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 138.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 142.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 146.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 150.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 154.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 158.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 162.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 166.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 296.5 92 170.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 130.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 134.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 138.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 142.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 146.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 150.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 154.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 158.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 162.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 166.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 300.5 92 170.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 130.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 134.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 138.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 142.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 146.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 150.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 154.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 158.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 162.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 166.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 304.5 92 170.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 130.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 134.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 138.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 142.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 146.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 150.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 154.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 158.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 162.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 166.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 308.5 92 170.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 130.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 134.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 138.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 142.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 146.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 150.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 154.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 158.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 162.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 166.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute positioned 312.5 92 170.5 if loaded ~ ~ ~ unless block ~ ~-1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run summon marker ~ ~ ~ {Tags:["origin.candidate"]}
+execute as @e[type=marker,tag=origin.candidate] at @s if entity @a[gamemode=!spectator,scores={stat.player=1,system.room=4..},distance=..5] run kill @s
+execute at @e[type=marker,tag=origin.candidate,sort=random,limit=1] run tp @s ~ ~ ~
+execute unless entity @e[type=marker,tag=origin.candidate] positioned 304.5 92 154.5 unless entity @a[gamemode=!spectator,scores={stat.player=1,system.room=4..},distance=..5] run tp @s ~ ~ ~
+execute unless entity @e[type=marker,tag=origin.candidate] positioned 304.5 92 154.5 if entity @a[gamemode=!spectator,scores={stat.player=1,system.room=4..},distance=..5] run return fail
+kill @e[type=marker,tag=origin.candidate]
+return 1

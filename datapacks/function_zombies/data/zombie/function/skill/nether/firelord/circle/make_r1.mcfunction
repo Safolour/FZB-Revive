@@ -1,0 +1,1 @@
+summon item_display ~ ~0.12 ~ {Tags:["mob.skill","firelord.circle.model","firelord.circle.r1","firelord.circle.crimson"],item:{id:"minecraft:diamond",count:1,components:{"minecraft:item_model":"custom:firelord/crimson"}},view_range:48f,transformation:{translation:[0f,0f,0f],scale:[8f,0.1f,8f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}

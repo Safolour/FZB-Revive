@@ -17,9 +17,15 @@ $tp @n[type=armor_stand,tag=chosen] $(x) $(y) $(z) $(m) $(n)
 execute if data storage zombie warpedguardiantwilightpos.left run tag @n[type=armor_stand,tag=chosen] add skill.twilightguardian.left
 execute if data storage zombie warpedguardiantwilightpos.right run tag @n[type=armor_stand,tag=chosen] add skill.twilightguardian.right
 
-execute as @n[type=armor_stand,tag=chosen] at @s run particle flash ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=0}]
-execute as @n[type=armor_stand,tag=chosen] at @s run particle explosion ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=0}]
-execute as @n[type=armor_stand,tag=chosen] at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0.05 10 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute as @n[type=armor_stand,tag=chosen] at @s run particle flash ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute as @n[type=armor_stand,tag=chosen] at @s run particle flash ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute as @n[type=armor_stand,tag=chosen] at @s run particle flash ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute as @n[type=armor_stand,tag=chosen] at @s run particle explosion ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute as @n[type=armor_stand,tag=chosen] at @s run particle explosion ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute as @n[type=armor_stand,tag=chosen] at @s run particle explosion ~ ~0.5 ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute as @n[type=armor_stand,tag=chosen] at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0.05 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute as @n[type=armor_stand,tag=chosen] at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0.05 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute as @n[type=armor_stand,tag=chosen] at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0.05 5 force @a[scores={particle=1}]
 
 tag @n[type=elder_guardian,tag=chosen] remove chosen
 tag @n[type=armor_stand,tag=chosen] remove chosen

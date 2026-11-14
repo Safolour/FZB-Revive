@@ -78,3 +78,4 @@ execute if items entity @s container.* *[custom_data~{tag:["ultimatesoulflamethr
 execute if items entity @s container.* *[custom_data~{tag:["ultimatezapper"]}] run function map:perk/double_bullet/clamp_one {gun:ultimatezapper}
 execute if items entity @s container.* *[custom_data~{tag:["weatheredcoppergun"]}] run function map:perk/double_bullet/clamp_one {gun:weatheredcoppergun}
 execute if items entity @s container.* *[custom_data~{tag:["zapper"]}] run function map:perk/double_bullet/clamp_one {gun:zapper}
+execute if items entity @s container.* *[custom_data~{tag:["paradox"]}] run function map:perk/double_bullet/clamp_one {gun:paradox}

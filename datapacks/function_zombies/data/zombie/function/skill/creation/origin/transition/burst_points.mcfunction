@@ -1,0 +1,5 @@
+$particle minecraft:dust_color_transition{from_color:16711680,to_color:0,scale:2} ^$(x0) ^ ^$(z0) 0.3 0.3 0.3 0 5 force @a[scores={system.room=4..,particle=0}]
+$particle minecraft:dust_color_transition{from_color:16711680,to_color:0,scale:2} ^$(x1) ^ ^$(z1) 0.3 0.3 0.3 0 5 force @a[scores={system.room=4..,particle=0}]
+$particle minecraft:dust_color_transition{from_color:16711680,to_color:0,scale:2} ^$(x2) ^ ^$(z2) 0.3 0.3 0.3 0 5 force @a[scores={system.room=4..,particle=0}]
+$particle minecraft:dust_color_transition{from_color:16711680,to_color:0,scale:2} ^$(x3) ^ ^$(z3) 0.3 0.3 0.3 0 5 force @a[scores={system.room=4..,particle=0}]
+$particle minecraft:dust_color_transition{from_color:16711680,to_color:0,scale:2} ^$(x4) ^ ^$(z4) 0.3 0.3 0.3 0 5 force @a[scores={system.room=4..,particle=0}]

@@ -1,0 +1,1 @@
+execute as @e[type=wither_skeleton,tag=firelord.p2.apostle,limit=1] at @s positioned ~ ~2 ~ if entity @p[gamemode=adventure,scores={stat.player=1},distance=..80] facing entity @p[gamemode=adventure,scores={stat.player=1},distance=..80] eyes positioned ^ ^ ^1 run function zombie:skill/nether/firelord/p2/laser_rune_create

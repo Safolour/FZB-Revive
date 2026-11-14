@@ -2,13 +2,17 @@
 scoreboard players add @s zombie.nether.guardian.eclipse.flame 1
 
 tp @s ^ ^ ^0.5
-particle large_smoke ~ ~0.3 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle large_smoke ~ ~0.3 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ~ ~0.3 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle large_smoke ~ ~0.3 ~ 0 0 0 0 1 force @a[scores={particle=1}]
 
 scoreboard players set 10 zombie.number 10
 scoreboard players operation pass zombie.number = @s zombie.nether.guardian.eclipse.flame
 scoreboard players operation pass zombie.number %= 10 zombie.number
 scoreboard players reset 10 zombie.number
-execute if score pass zombie.number matches 0 run particle soul_fire_flame ~ ~0.1 ~ 0 0 0 0.05 10 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute if score pass zombie.number matches 0 run particle soul_fire_flame ~ ~0.1 ~ 0 0 0 0.05 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if score pass zombie.number matches 0 run particle soul_fire_flame ~ ~0.1 ~ 0 0 0 0.05 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if score pass zombie.number matches 0 run particle soul_fire_flame ~ ~0.1 ~ 0 0 0 0.05 5 force @a[scores={particle=1}]
 execute if score pass zombie.number matches 0 run playsound block.fire.ambient
 scoreboard players reset pass zombie.number
 
@@ -29,8 +33,12 @@ kill @e[type=block_display,tag=target]
 scoreboard players reset match zombie.nether.guardian.eclipse.flame.match
 kill @s
 
-particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
-particle soul_fire_flame ~ ~ ~ 0 0 0 0.1 20 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.1 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.1 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.1 10 force @a[scores={particle=1}]
 playsound entity.player.hurt_on_fire record @a ~ ~ ~ 1 1
 
 execute if entity @a[scores={stat.player=1},distance=..2] as @a[scores={stat.player=1},distance=..2] at @s run function zombie:skill/nether/guardian/warped/0/skill/eclipse/damage0

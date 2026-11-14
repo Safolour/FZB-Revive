@@ -5,6 +5,10 @@ scoreboard players operation number1 zombie.bossbar_number = number zombie.bossb
 scoreboard players operation health zombie.bossbar_number = @s zombie.health
 scoreboard players operation health0 zombie.bossbar_number = @s zombie.max_health
 function zombie:bossbar/if_health0
+# P3 returns the same Origin with half health: the replay shows 7 of 15 red bars.
+execute if entity @s[tag=skill.origin,tag=origin.p3] run scoreboard players operation number1 zombie.bossbar_number = health zombie.bossbar_number
+execute if entity @s[tag=skill.origin,tag=origin.p3] run scoreboard players operation number1 zombie.bossbar_number *= number0 zombie.bossbar_number
+execute if entity @s[tag=skill.origin,tag=origin.p3] run scoreboard players operation number1 zombie.bossbar_number /= health0 zombie.bossbar_number
 execute unless score @s zombie.bossbar_number0 = @s zombie.bossbar_number0 run scoreboard players operation @s zombie.bossbar_number0 = number1 zombie.bossbar_number
 scoreboard players operation number0 zombie.bossbar_number -= number1 zombie.bossbar_number
 

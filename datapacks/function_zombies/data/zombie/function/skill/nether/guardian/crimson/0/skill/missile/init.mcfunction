@@ -7,7 +7,9 @@ scoreboard players set @s zombie.nether.guardian.missile 0
 effect give @s glowing infinite 0 true
 team join zombie.crimsonguardian
 
-particle soul_fire_flame ~ ~1 ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle soul_fire_flame ~ ~1 ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~1 ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~1 ~ 0 0 0 0.2 15 force @a[scores={particle=1}]
 playsound entity.wither.ambient record @a ~ ~ ~ 2 1
 
 tp @e[type=armor_stand,tag=skill.crimsonguardian.match] ~ ~ ~ facing entity @p[scores={stat.player=1}]

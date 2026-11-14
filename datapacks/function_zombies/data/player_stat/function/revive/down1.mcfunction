@@ -8,5 +8,6 @@ title @a[scores={system.room=4..,title.color.enable=0}] times 20 60 20
 $tellraw @s [{translate:"zb.revive.tellraw.3",with:[[{selector:"@s"}],$(target),[{translate:"zb.revive.area.$(area)"}],[{score:{name:"#seconds",objective:"revive.timer"},color:"yellow"}]]}]
 $tellraw @a[tag=!chosen,scores={system.room=4..}] [{translate:"zb.revive.tellraw.1",with:[[{selector:"@s"}],$(target),[{translate:"zb.revive.area.$(area)"}],[{score:{name:"#seconds",objective:"revive.timer"},color:"yellow"}]]}]
 title @a[scores={system.room=4..,title.color.enable=0}] title [{text:""}]
-$title @a[scores={system.room=4..,title.color.enable=0}] subtitle [{translate:"zb.revive.title.0",with:[[{selector:"@s"}],[{text:""}],[{translate:"zb.revive.area.$(area)"}]]}]
+$execute unless entity @s[scores={area=1001}] run title @a[scores={system.room=4..,title.color.enable=0}] subtitle [{translate:"zb.revive.title.0",with:[[{selector:"@s"}],[{text:""}],[{translate:"zb.revive.area.$(area)"}]]}]
+$execute if entity @s[scores={area=1001}] run title @a[scores={system.room=4..,title.color.enable=0}] subtitle [{translate:"zb.revive.title.0",with:[[{selector:"@s"}],[{text:""}],[{translate:"zb.revive.area.$(area)",color:"#FF0000"}]]}]
 tag @s remove chosen

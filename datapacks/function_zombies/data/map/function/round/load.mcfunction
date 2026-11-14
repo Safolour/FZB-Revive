@@ -13,3 +13,5 @@ scoreboard objectives add round.spawn dummy
 
 
 function map:round/mob_spawn_list/lab
+# 区分尚未开局与冻结中的对局。
+scoreboard players set #game_active round 0

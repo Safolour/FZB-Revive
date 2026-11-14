@@ -13,5 +13,10 @@ execute if score timer area.floor.timer matches 880 run scoreboard players set t
 execute if score timer area.floor.timer matches 800..880 as @e[tag=mob] at @s run function map:area/lab/floor/nether/spirit/tick0
 execute if score timer area.floor.timer matches 0..880 as @a at @s run function map:area/lab/floor/nether/spirit/tick0
 
-particle white_ash 300 92 150 15 5 20 0.02 30 force @a[scores={particle=0}]
-particle soul 300 92 150 15 5 20 0.02 3 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle white_ash 300 92 150 15 5 20 0.02 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle white_ash 300 92 150 15 5 20 0.02 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle white_ash 300 92 150 15 5 20 0.02 15 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle soul 300 92 150 15 5 20 0.02 3 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul 300 92 150 15 5 20 0.02 3 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul 300 92 150 15 5 20 0.02 1 force @a[scores={particle=1}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle soul 300 92 150 15 5 20 0.02 1 force @a[scores={particle=1}]

@@ -1,0 +1,5 @@
+# Keep an overdue event queued until it can actually start.
+scoreboard players add @s fl.circleclock 1
+execute unless entity @s[tag=firelord.sunflare.active] unless entity @s[tag=firelord.circle.active] unless entity @s[tag=firelord.traveling] unless entity @s[tag=firelord.eclipse.charge] unless entity @s[tag=firelord.p3.eclipse.next] if score @s fl.circleclock matches 1200.. if entity @a[scores={stat.player=1},gamemode=adventure,distance=..64] run function zombie:skill/nether/firelord/circle/start
+execute if entity @s[tag=firelord.p3,tag=firelord.p3.eclipse.next,tag=!firelord.sunflare.active,tag=!firelord.circle.active,tag=!firelord.traveling,tag=!firelord.eclipse.charge,tag=!firelord.charging,tag=!firelord.fire.pending,tag=!firelord.combo.first,tag=!firelord.combo.second,tag=!firelord.combo.third,tag=!fl.charge.wait] if score @s fl.circleclock matches 1200.. run function zombie:skill/nether/firelord/p3/eclipse/repeat
+execute if entity @s[tag=firelord.circle.active] run function zombie:skill/nether/firelord/circle/tick

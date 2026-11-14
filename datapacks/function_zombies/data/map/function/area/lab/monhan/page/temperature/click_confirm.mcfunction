@@ -1,3 +1,4 @@
+execute if data storage map:r40 p5_closed run return run function map:area/lab/monhan/page/main/show
 execute unless score #idx monhan matches 1 run return run function map:area/lab/monhan/page/main/show
 execute unless score round game.state matches 21..40 run return run function map:area/lab/monhan/page/main/show
 

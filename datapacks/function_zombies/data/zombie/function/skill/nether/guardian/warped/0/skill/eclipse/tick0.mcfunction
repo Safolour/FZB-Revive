@@ -1,9 +1,13 @@
 
 execute if score @s zombie.nether.guardian.eclipse matches 15.. run function zombie:skill/nether/guardian/warped/0/skill/eclipse/path
 
-execute if score @s zombie.nether.guardian.eclipse matches ..30 run particle snowflake ~ ~ ~ 0.3 0.3 0.3 0 6 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute if score @s zombie.nether.guardian.eclipse matches ..30 run particle snowflake ~ ~ ~ 0.3 0.3 0.3 0 6 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if score @s zombie.nether.guardian.eclipse matches ..30 run particle snowflake ~ ~ ~ 0.3 0.3 0.3 0 6 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if score @s zombie.nether.guardian.eclipse matches ..30 run particle snowflake ~ ~ ~ 0.3 0.3 0.3 0 3 force @a[scores={particle=1}]
 
-execute if score @s zombie.nether.guardian.eclipse matches 30.. run particle snowflake ~ ~ ~ 1 1 1 0 10 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute if score @s zombie.nether.guardian.eclipse matches 30.. run particle snowflake ~ ~ ~ 1 1 1 0 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if score @s zombie.nether.guardian.eclipse matches 30.. run particle snowflake ~ ~ ~ 1 1 1 0 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if score @s zombie.nether.guardian.eclipse matches 30.. run particle snowflake ~ ~ ~ 1 1 1 0 5 force @a[scores={particle=1}]
 
 execute if score @s zombie.nether.guardian.eclipse matches 10 run data merge entity @n[type=slime,tag=skill.warpedguardian.eclipse.4] {Size:1}
 execute if score @s zombie.nether.guardian.eclipse matches 20 run data merge entity @n[type=slime,tag=skill.warpedguardian.eclipse.4] {Size:2}

@@ -115,3 +115,4 @@ function weapon:range/gun/gun/ultimateseason_winter/load
 # BEGIN ECHO LOAD
 function weapon:range/skill/skill/echo/load
 # END ECHO LOAD
+function weapon:range/gun/gun/paradox/load

@@ -1,6 +1,9 @@
 
 function player_stat:revive/revive_self
-playsound minecraft:entity.ender_dragon.death record @s ~ ~ ~ 5 0
+# R70 victory is a single non-spatial master cue at each participant's feet.
+execute unless score round game.state matches 70 run playsound minecraft:entity.ender_dragon.death record @s ~ ~ ~ 5 0
+execute if score round game.state matches 70 unless score type map matches 4 run playsound minecraft:entity.ender_dragon.death record @s ~ ~ ~ 5 0
+execute if score round game.state matches 70 if score type map matches 4 run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 5 0
 title @s reset
 title @s times 0 2000 0
 title @s title [{translate:zb.game.title.1}]

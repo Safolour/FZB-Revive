@@ -1,7 +1,11 @@
 
 #execute if entity @s[tag=particle] run particle soul_fire_flame ~ ~ ~ 0.02 0.02 0.02 0 1 force @a
-execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ~ ~ ~ 0.02 0.02 0.02 0 1 force @a[scores={particle=0..1}]
-execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ^ ^ ^-0.5 0.02 0.02 0.02 0 1 force @a[scores={particle=0..2}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ~ ~ ~ 0.02 0.02 0.02 0 1 force @a[scores={particle=0..1}]
+execute if score round game.state matches 40 run execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ~ ~ ~ 0.02 0.02 0.02 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ~ ~ ~ 0.02 0.02 0.02 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ^ ^ ^-0.5 0.02 0.02 0.02 0 1 force @a[scores={particle=0..2}]
+execute if score round game.state matches 40 run execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ^ ^ ^-0.5 0.02 0.02 0.02 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=particle] if score @s zombie.nether.guardian.laser matches 2.. run particle dripping_water ^ ^ ^-0.5 0.02 0.02 0.02 0 1 force @a[scores={particle=1}]
 
 scoreboard players add @s zombie.nether.guardian.laser.particle 1
 execute if score @s zombie.nether.guardian.laser.particle matches 7.. run scoreboard players set @s zombie.nether.guardian.laser.particle 0

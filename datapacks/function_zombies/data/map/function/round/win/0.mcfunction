@@ -1,5 +1,6 @@
 execute if score debug round matches 1 run return fail
 execute if score round game.state matches -1 run gamemode adventure @a[gamemode=spectator]
+execute if score round game.state matches -1 run function mainlobby:attribute_panel/reset
 execute if score round game.state matches -1 run return run function _:_init
 execute if score round game.state matches -1 run return fail
 

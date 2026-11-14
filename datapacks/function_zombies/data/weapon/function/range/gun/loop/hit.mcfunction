@@ -1,6 +1,7 @@
 tag @s remove gethit
 # 命中检测在子弹前方 0.5 格处进行，爆头判定也在同一点上做
 execute positioned ^ ^ ^0.5 run function weapon:range/gun/detect/hitbox
+execute if entity @s[tag=firelord.p2.ghast,tag=hit] run return run function weapon:range/gun/detect/invulnerable_hit
 execute if entity @s[type=marker,tag=skill.creation.rampart.shield] run scoreboard players set penetrable weapon.state 0
 execute if entity @s[type=marker,tag=skill.creation.rampart.shield] run scoreboard players set reflection weapon.state 0
 execute if score penetrable weapon.state matches 1.. run scoreboard players remove penetrable weapon.state 1
@@ -81,3 +82,4 @@ execute if score gun weapon.use matches 10076 run function weapon:range/gun/gun/
 tag @s remove hit
 tag @s remove hit1
 tag @s remove hit2
+execute if score gun weapon.use matches 10081 run function weapon:range/gun/gun/paradox/hit

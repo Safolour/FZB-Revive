@@ -1,4 +1,6 @@
-particle scrape ~ ~0.5 ~ 0.2 0.2 0.2 0.9 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle scrape ~ ~0.5 ~ 0.2 0.2 0.2 0.9 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle scrape ~ ~0.5 ~ 0.2 0.2 0.2 0.9 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle scrape ~ ~0.5 ~ 0.2 0.2 0.2 0.9 1 force @a[scores={particle=1}]
 
 scoreboard players add @s zombie.nether.guardian.twilight 1
 

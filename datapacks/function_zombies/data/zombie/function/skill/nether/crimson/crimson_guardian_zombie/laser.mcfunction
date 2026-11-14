@@ -1,5 +1,9 @@
-execute at @s run particle dripping_lava ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=0..1}]
-execute at @s run particle dripping_lava ^ ^ ^0.25 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute at @s run particle dripping_lava ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=0..1}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_lava ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute at @s run particle dripping_lava ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute at @s run particle dripping_lava ^ ^ ^0.25 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_lava ^ ^ ^0.25 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute at @s run particle dripping_lava ^ ^ ^0.25 0 0 0 0 1 force @a[scores={particle=1}]
 
 execute at @s run tp @s ^ ^ ^0.5
 scoreboard players add @s zombie.nether.crimson.crimsonguardianzombie.particle 1

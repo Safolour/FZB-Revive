@@ -1,7 +1,9 @@
 scoreboard players add @s zombie.nether.guardian.eclipse.death 1
 
 #particle flame ~ ~ ~ 0 0 0 0 1 force @a
-particle soul_fire_flame ~ ~ ~ 0 0 0 0.01 2 force @a[scores={particle=0..1}]
+execute unless score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.01 2 force @a[scores={particle=0..1}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.01 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.01 1 force @a[scores={particle=1}]
 
 execute store result score @s zombie.nether.guardian.eclipse.death.y run data get entity @s Pos[1]
 

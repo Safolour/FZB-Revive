@@ -1,5 +1,4 @@
 
-
 execute if entity @s[scores={interaction.state=1..}] at @s run function interaction:tick0
 
 function zombie:tick1

@@ -4,4 +4,6 @@ execute store result score #drop area.temperature run random value 16..24
 scoreboard players operation temperature0 area.temperature -= #drop area.temperature
 execute if score temperature0 area.temperature matches ..-1 run scoreboard players set temperature0 area.temperature 0
 function map:area/lab/temperature/update
-tellraw @a[scores={system.room=4..}] [{translate:zb.powerup.tellraw.5,with:[{score:{name:"temperature0",objective:"area.temperature"}}]}]
+function map:powerup/presentation/temperature {players:"@a[scores={system.room=4..}]",holder:"temperature0",objective:"area.temperature"}
+
+function zombie:skill/nether/firelord/p3/eclipse/purify_count

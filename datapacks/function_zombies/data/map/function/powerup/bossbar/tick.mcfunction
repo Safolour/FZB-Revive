@@ -30,7 +30,4 @@ scoreboard players operation time powerup.timer > timer powerup.timer.doublegold
 scoreboard players operation time powerup.timer > timer powerup.timer.triplegold
 scoreboard players operation time powerup.timer > timer powerup.timer.quadruplegold
 scoreboard players operation time powerup.timer > timer powerup.timer.shoppingspree
-function map:powerup/time
-function map:powerup/bossbar/tick0 with storage powerup root
-function map:powerup/bossbar/tick1 with storage powerup bossbar
-data remove storage powerup root
+function map:powerup/presentation/bar_render {holder:"time",objective:"powerup.timer",storage:"powerup",bar:"powerup",players:"@a[scores={system.room=4}]"}

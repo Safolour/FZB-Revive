@@ -1,2 +1,6 @@
-particle glow ^0.28 ^-0.28 ^ 0 0 0 0 1 force @a[scores={particle=0}]
-particle glow ^0.15 ^-0.37 ^0.25 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle glow ^0.28 ^-0.28 ^ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle glow ^0.28 ^-0.28 ^ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle glow ^0.28 ^-0.28 ^ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle glow ^0.15 ^-0.37 ^0.25 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle glow ^0.15 ^-0.37 ^0.25 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle glow ^0.15 ^-0.37 ^0.25 0 0 0 0 1 force @a[scores={particle=1}]

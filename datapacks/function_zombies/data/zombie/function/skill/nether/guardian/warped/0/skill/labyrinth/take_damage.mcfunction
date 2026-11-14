@@ -13,7 +13,11 @@ tag @s remove target
 tag @e[type=armor_stand,tag=target] remove target
 scoreboard players reset match zombie.nether.guardian.labyrinth.match
 
-particle dust{color:[1,1,1],scale:1} ~ ~ ~ 0.3 0.3 0.3 0 10 force @a[scores={particle=0}]
-particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle dust{color:[1,1,1],scale:1} ~ ~ ~ 0.3 0.3 0.3 0 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle dust{color:[1,1,1],scale:1} ~ ~ ~ 0.3 0.3 0.3 0 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle dust{color:[1,1,1],scale:1} ~ ~ ~ 0.3 0.3 0.3 0 5 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
 
 playsound entity.wither.hurt record @a ~ ~ ~ 2 2

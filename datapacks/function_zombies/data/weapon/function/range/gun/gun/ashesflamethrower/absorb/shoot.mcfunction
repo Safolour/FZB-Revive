@@ -12,5 +12,7 @@ execute if items entity @s weapon *[custom_data~{tag:["ultimateashesflamethrower
 scoreboard players operation #ashes_add weapon.state = absorb weapon.ashes
 execute if score @s perk.ashes_bullet matches 1.. run scoreboard players operation #ashes_add weapon.state *= 2 number
 tag @s add ashes_giver
-execute as @a[scores={system.room=4},distance=..5] at @s run function weapon:range/gun/gun/ashesflamethrower/absorb/add
+# 训练与实战沿用同一金血结算，只把接收者限定在射手所在环境。
+execute if score @s system.room matches 2 as @a[scores={system.room=2},distance=..5] at @s run function weapon:range/gun/gun/ashesflamethrower/absorb/add
+execute if score @s system.room matches 4 as @a[scores={system.room=4},distance=..5] at @s run function weapon:range/gun/gun/ashesflamethrower/absorb/add
 tag @s remove ashes_giver

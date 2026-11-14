@@ -12,4 +12,6 @@ execute if score timer area.floor.timer matches 880 run scoreboard players set t
 
 execute if score timer area.floor.timer matches 840..880 as @e at @s run function map:area/lab/floor/nether/ashes/tick0
 
-particle ash 300 92 150 15 5 20 0.02 60 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle ash 300 92 150 15 5 20 0.02 60 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle ash 300 92 150 15 5 20 0.02 60 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle ash 300 92 150 15 5 20 0.02 30 force @a[scores={particle=1}]

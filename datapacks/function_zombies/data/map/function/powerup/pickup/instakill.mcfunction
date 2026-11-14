@@ -1,2 +1,2 @@
 
-execute as @a[scores={system.room=4..}] at @s run playsound entity.zombie_horse.death record @s ~ ~ ~ 10 0
+function map:powerup/presentation/effect/instakill {players:"@a[scores={system.room=4..}]"}

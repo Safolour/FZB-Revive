@@ -11,5 +11,9 @@ tag @s remove add
 execute store result entity @s Rotation[0] float 0.0001 run scoreboard players get rotation0 zombie.nether.guardian.laser.reflection
 
 
-particle flash ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=0}]
-particle explosion ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle flash ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flash ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flash ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle explosion ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion ^ ^ ^-1 0 0 0 0 1 force @a[scores={particle=1}]

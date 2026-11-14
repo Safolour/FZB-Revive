@@ -1,10 +1,18 @@
 
 tp @s ~ ~ ~ ~5 ~
 
-particle flame ^ ^1.8 ^1 0 0.2 0 0.02 1 force @a[scores={particle=0}]
-particle soul_fire_flame ^1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=0}]
-particle large_smoke ^-1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=0}]
-particle sculk_soul ^ ^1.8 ^-1 0 0.2 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle flame ^ ^1.8 ^1 0 0.2 0 0.02 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ^ ^1.8 ^1 0 0.2 0 0.02 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flame ^ ^1.8 ^1 0 0.2 0 0.02 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle soul_fire_flame ^1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ^1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle soul_fire_flame ^1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle large_smoke ^-1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ^-1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle large_smoke ^-1 ^1.8 ^ 0 0.2 0 0.02 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle sculk_soul ^ ^1.8 ^-1 0 0.2 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle sculk_soul ^ ^1.8 ^-1 0 0.2 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle sculk_soul ^ ^1.8 ^-1 0 0.2 0 0 1 force @a[scores={particle=1}]
 
 scoreboard players add cooldown zombie.nether.guardian.eye 1
 execute if score cooldown zombie.nether.guardian.eye matches ..20 run return 0

@@ -1,3 +1,4 @@
+function weapon:range/gun/gun/paradox/dispatch
 execute if entity @s[tag=weapon.res_request] at @s run function weapon:range/gun/gun/resonance/skill/request
 execute if entity @s[tag=weapon.res_cast] at @s run function weapon:range/gun/gun/resonance/skill/tick
 scoreboard players set @s[scores={interaction.right_click=1..}] weapon.rightclick 1

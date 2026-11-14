@@ -108,3 +108,4 @@ function weapon:range/gun/gun/ultimateseason_winter/reset
 # BEGIN ECHO RESET
 function weapon:range/skill/skill/echo/reset
 # END ECHO RESET
+function weapon:range/gun/gun/paradox/reset

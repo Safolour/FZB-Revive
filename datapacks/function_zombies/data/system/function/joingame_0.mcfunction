@@ -1,4 +1,3 @@
-
 execute store result score online player_count run execute if entity @a
 execute store result score in_game lobby.info run execute if entity @a[scores={system.room=4..}]
 execute unless score @s system.quitgame = @s system.quitgame run function mainlobby:joingame

@@ -14,6 +14,8 @@ execute \
     store result storage player_motion:math motion_z double 0.0001 run \
     scoreboard players operation $motion_z player_motion.internal.math = @s player_motion.internal.motion.z
 
+# 运动计算前恢复可能被清理的辅助实体，避免沿用上次计算的方向与强度。
+execute in minecraft:overworld unless entity d4bd74a7-4e82-4a07-8850-dfc4d89f9e2f run summon marker 0.0 0.0 0.0 {UUID:[I;-725781337,1317161479,-2007965756,-660627921],Tags:["smithed.strict","smithed.entity"]}
 execute in minecraft:overworld run function player_motion:internal/math/main
 attribute @s knockback_resistance modifier add player_motion:disable_knockback_resistance -1 add_multiplied_total
 function player_motion:internal/launch/gamemode/get

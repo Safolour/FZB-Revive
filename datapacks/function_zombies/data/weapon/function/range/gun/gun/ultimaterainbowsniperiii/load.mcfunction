@@ -11,7 +11,7 @@ scoreboard players set gold weapon.gun_ultimaterainbowsniperiii 10
 scoreboard players set gold_crit weapon.gun_ultimaterainbowsniperiii 15
 scoreboard players set punch weapon.gun_ultimaterainbowsniperiii 100
 scoreboard players set extrashot weapon.gun_ultimaterainbowsniperiii 4
-scoreboard players set extrashot_time weapon.gun_ultimaterainbowsniperiii 1
+scoreboard players set extrashot_time weapon.gun_ultimaterainbowsniperiii 0
 
 scoreboard objectives add weapon.gun_ultimaterainbowsniperiii_ammo dummy
 scoreboard objectives add weapon.gun_ultimaterainbowsniperiii_clip_ammo dummy

@@ -15,6 +15,10 @@ tellraw @s [\
 tellraw @s [\
     {translate:zb.debug.menu.tellraw.perk,click_event:{action:run_command,command:"function map:debug/menu/menu/1_3"}}\
     ]
+
+tellraw @s [\
+    {translate:zb.debug.menu.tellraw.powerup,click_event:{action:run_command,command:"function map:debug/menu/menu/1_4"}}\
+    ]
 tellraw @s [\
     {translate:zb.debug.menu.tellraw.gold,click_event:{action:run_command,command:"function map:debug/menu/trigger/get_gold"}}\
     ]

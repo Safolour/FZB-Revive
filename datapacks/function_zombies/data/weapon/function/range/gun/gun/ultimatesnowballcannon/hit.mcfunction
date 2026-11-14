@@ -4,6 +4,6 @@ execute if entity @s[tag=hit] as @n[tag=chosen,tag=projectile] at @s run functio
 tag @s add chosen
 execute as @s at @s as @e[tag=hitable,scores={zombie.health=1..},distance=..3,limit=5,tag=!chosen] at @s run function weapon:range/gun/gun/ultimatesnowballcannon/damage_2
 tag @s remove chosen
-particle explosion ~ ~ ~ 0 0 0 0 0 force @a[scores={particle=0..1}]
+particle explosion ~ ~ ~ 0 0 0 0 0 force @a[scores={gun.particle=0..1}]
 execute if entity @s[tag=hit,tag=hit1] run function weapon:range/gun/gun/ultimatesnowballcannon/damage_1
 execute if entity @s[tag=hit,tag=hit2] run function weapon:range/gun/gun/ultimatesnowballcannon/damage_2

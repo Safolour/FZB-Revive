@@ -23,3 +23,11 @@ scoreboard players set @s[scores={interaction.left_click=1..}] interaction.left_
 scoreboard players set @s[scores={interaction.right_click=1..}] interaction.right_click 0
 
 
+
+execute if entity @s[tag=origin.fx] run function zombie:skill/creation/origin/cleanup_tick
+execute if entity @s[tag=origin.destination] run function zombie:skill/creation/origin/cleanup_tick
+execute if entity @s[tag=origin.combat_fx] at @s run function zombie:skill/creation/origin/combat_fx_tick
+execute if entity @s[type=marker,tag=titan.sword.anchor] at @s run function zombie:skill/creation/titan/fx_tick
+execute if entity @s[type=marker,tag=titan.lightning.controller] at @s run function zombie:skill/creation/titan/fx_tick
+execute if entity @s[type=marker,tag=titan.lightning.target] at @s run function zombie:skill/creation/titan/fx_tick
+execute if entity @s[type=marker,tag=titan.eclipse.death.ray] at @s run function zombie:skill/creation/titan/eclipse/death_fx/ray_tick

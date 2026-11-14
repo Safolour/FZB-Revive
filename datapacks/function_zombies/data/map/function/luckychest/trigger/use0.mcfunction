@@ -1,3 +1,4 @@
+function mainlobby:setting/powerup/lucky_price
 
 execute unless score @s luckychest.state matches 1.. as @p[tag=chosen] at @s run playsound entity.enderman.teleport record @s ~ ~ ~ 1 0 0
 execute unless score @s luckychest.state matches 1.. run return run tellraw @p[tag=chosen] [{translate:"zb.luckychest.tellraw.1"}]

@@ -10,7 +10,10 @@ execute unless entity @a[tag=target] run return 0
 
 execute if entity @a[tag=target,distance=..10] run effect give @s slowness 1 255 true
 
-particle flame ~ ~1.5 ~ 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle flame ~ ~1.5 ~ 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ~ ~1.5 ~ 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ~ ~1.5 ~ 0 0 0 0.1 2 force @a[scores={particle=1}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flame ~ ~1.5 ~ 0 0 0 0.1 1 force @a[scores={particle=1}]
 playsound entity.allay.hurt record @a ~ ~ ~ 1.5 2
 playsound minecraft:entity.arrow.shoot
 

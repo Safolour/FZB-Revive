@@ -22,10 +22,7 @@ function weapon:range/gun/allammo
 execute if score type map matches 3 run function inventory:inventory/ee_start
 execute if score type map matches 4 run function inventory:inventory/lab_start
 
-scoreboard players operation @s health.heal_speed = basic health.heal_speed
-effect give @s saturation infinite 0 true
-effect give @s resistance infinite 4 true
-effect give @s mining_fatigue infinite 2 true
+function player_stat:environment/combat
 
 loot replace block 1 -60 1 container.0 loot map:playerhead
 data modify storage game root.player.name set from block 1 -60 1 Items[{Slot:0b}].components."minecraft:profile".name
@@ -46,4 +43,3 @@ item replace block 1 -60 1 container.0 with air
 
 function map:game/tellraw
 function bs.health:add/health {points:-0.01}
-attribute @s burning_time base set 0

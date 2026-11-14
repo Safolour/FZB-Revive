@@ -422,8 +422,8 @@ data modify storage round mob_spawn_list set value [\
         ]\
         },\
     {round:40,wave:[\
-            {wave:0,time:200,extra:1,mob:[]},\
-            {wave:1,time:0,mob:[{id:"nether/spirit/monhan_follower/2",count:1,spawner:portal}]},\
+            {wave:0,time:300,extra:1,mob:[]},\
+            {wave:1,time:0,mob:[{id:"nether/firelord/spawn_north",count:1,spawner:portal}]},\
         ]\
         },\
     {round:41,wave:[\
@@ -725,8 +725,8 @@ data modify storage round mob_spawn_list set value [\
         ]\
         },\
     {round:70,wave:[\
-            {wave:0,time:200,extra:1,mob:[{id:"machine/observereye/reset",count:0,spawner:giant}]},\
-            {wave:1,time:0,mob:[{id:"creation/quell/0",count:1,spawner:portal}]},\
+            {wave:0,time:400,extra:1,mob:[]},\
+            {wave:1,time:0,mob:[{id:"creation/origin/0",count:1,spawner:portal}]},\
         ]\
         },\
 ]

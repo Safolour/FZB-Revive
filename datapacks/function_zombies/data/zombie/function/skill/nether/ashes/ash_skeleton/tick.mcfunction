@@ -11,7 +11,9 @@ execute unless entity @a[tag=target] run return 0
 
 execute if entity @a[tag=target,distance=..10] run effect give @s slowness 1 255 true
 
-particle ash ~ ~1.5 ~ 0 0 0 0.1 20 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle ash ~ ~1.5 ~ 0 0 0 0.1 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle ash ~ ~1.5 ~ 0 0 0 0.1 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle ash ~ ~1.5 ~ 0 0 0 0.1 10 force @a[scores={particle=1}]
 playsound entity.allay.hurt record @a ~ ~ ~ 1.5 2
 playsound entity.arrow.shoot record @a ~ ~ ~
 

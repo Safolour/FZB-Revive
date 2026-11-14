@@ -288,3 +288,22 @@ scoreboard objectives add zombie.creation.cradle dummy
 
 
 function zombie:skill/load0
+function zombie:skill/creation/origin/load
+
+scoreboard objectives add fl.p2.ashes dummy
+
+scoreboard objectives add firelord.circle dummy
+
+scoreboard objectives add fl.volley dummy
+
+scoreboard objectives add fl.shots dummy
+
+scoreboard objectives add fl.firewait dummy
+
+scoreboard objectives add fl.safe.melee dummy
+
+scoreboard objectives add fl.circleclock dummy
+
+scoreboard objectives add fl.eclipse.v dummy
+
+scoreboard objectives add fl.sunflare dummy

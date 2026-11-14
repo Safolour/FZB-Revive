@@ -1,0 +1,25 @@
+playsound minecraft:entity.ender_dragon.flap player @a ~ ~ ~ 1 1
+particle minecraft:end_rod ~1.00000 ~ ~0.00000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.96593 ~ ~0.25882 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.86603 ~ ~0.50000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.70711 ~ ~0.70711 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.50000 ~ ~0.86603 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.25882 ~ ~0.96593 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.00000 ~ ~1.00000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.25882 ~ ~0.96593 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.50000 ~ ~0.86603 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.70711 ~ ~0.70711 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.86603 ~ ~0.50000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.96593 ~ ~0.25882 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-1.00000 ~ ~0.00000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.96593 ~ ~-0.25882 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.86603 ~ ~-0.50000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.70711 ~ ~-0.70711 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.50000 ~ ~-0.86603 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.25882 ~ ~-0.96593 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~-0.00000 ~ ~-1.00000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.25882 ~ ~-0.96593 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.50000 ~ ~-0.86603 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.70711 ~ ~-0.70711 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.86603 ~ ~-0.50000 0 0 0 0 1 normal @a
+particle minecraft:end_rod ~0.96593 ~ ~-0.25882 0 0 0 0 1 normal @a

@@ -1,4 +1,5 @@
 
+function mainlobby:setting/reset
 scoreboard objectives remove lobby.hologram
 
 scoreboard objectives remove lobby.menu_uuid

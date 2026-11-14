@@ -113,6 +113,9 @@ execute if entity @s[type=zombie,tag=skill.creation.electrification] at @s run f
 
 execute if entity @s[type=zombie,tag=skill.creation.calamity] at @s run function zombie:skill/creation/calamity/tick
 
+execute if entity @s[type=zombie,tag=skill.titan] at @s run function zombie:skill/creation/titan/tick
+execute if entity @s[type=slime,tag=skill.titan.eclipse] at @s run function zombie:skill/creation/titan/eclipse/tick
+
 execute if entity @s[type=zombie,tag=skill.creation.benediction] at @s run function zombie:skill/creation/benediction/tick
 
 execute if entity @s[type=zombie,tag=skill.creation.avert] at @s run function zombie:skill/creation/avert/tick
@@ -121,3 +124,6 @@ execute if entity @s[type=zombie,tag=skill.lamda] at @s run function zombie:skil
 
 execute if entity @s[type=zombie,tag=skill.creation.cradle] at @s run function zombie:skill/creation/cradle/tick
 
+execute if entity @s[type=zombie,tag=skill.firelord] at @s run function zombie:skill/nether/firelord/tick
+
+execute if entity @s[type=wither_skeleton,tag=firelord.p2.apostle] unless entity @e[type=zombie,tag=skill.firelord,tag=firelord.p2.ashes] at @s run function zombie:skill/nether/firelord/p2/apostle_post_tick

@@ -7,7 +7,9 @@ scoreboard players set @s zombie.armor 100
 
 summon marker ~ ~ ~ {Tags:["mob.skill","skill.warpedguardian.shield"]}
 
-particle end_rod ~ ~1 ~ 0 0 0 0.3 100 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle end_rod ~ ~1 ~ 0 0 0 0.3 100 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle end_rod ~ ~1 ~ 0 0 0 0.3 100 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle end_rod ~ ~1 ~ 0 0 0 0.3 50 force @a[scores={particle=1}]
 playsound entity.illusioner.prepare_mirror record @a ~ ~ ~ 10 2
 
 

@@ -1,9 +1,13 @@
 
-execute unless entity @a run return fail
+# 没有开始的游戏不能当作无人局结束。
+execute unless score #game_active round matches 1 unless entity @a[scores={system.room=4..}] run return fail
+# 无人在线时也要立即结束并保存本局，不能等待玩家重新上线。
+execute unless entity @a[scores={system.room=4..}] if score round game.state matches 1.. run scoreboard players set win stat.win 0
 execute unless entity @a[scores={system.room=4..}] run return run function map:round/gameover/end
 execute if score debug round matches 1 run return fail
 execute if score timer round matches 1.. if score round game.state matches -1 run return fail
 execute if score round game.state matches -1 run gamemode adventure @a[gamemode=spectator]
+execute if score round game.state matches -1 run function mainlobby:attribute_panel/reset
 execute if score round game.state matches -1 run return run function _:_init
 
 scoreboard players set win stat.win 0

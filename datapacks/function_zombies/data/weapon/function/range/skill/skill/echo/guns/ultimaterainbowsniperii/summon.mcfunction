@@ -1,3 +1,5 @@
+execute unless score @s weapon.gun_ultimaterainbowsniperii_ammo matches 1.. run return 0
+execute unless score @s weapon.gun_echo_clip_ammo matches 1.. run return 0
 scoreboard players remove @s weapon.gun_ultimaterainbowsniperii_ammo 1
 scoreboard players remove @s weapon.gun_echo_clip_ammo 1
 function weapon:range/skill/skill/echo/count

@@ -20,12 +20,22 @@ execute if entity @a[scores={stat.player=1},distance=..3] as @a[scores={stat.pla
 
 kill @s
 
-particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
-particle explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
-particle flash ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
-particle large_smoke ~ ~ ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
-particle lava ~ ~ ~ 0.5 0.5 0.5 0 10 force @a[scores={particle=0}]
-particle flame ~ ~ ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle explosion ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle flash ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flash ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flash ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle large_smoke ~ ~ ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ~ ~ ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ~ ~ ~ 0 0 0 0.2 15 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle lava ~ ~ ~ 0.5 0.5 0.5 0 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle lava ~ ~ ~ 0.5 0.5 0.5 0 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle lava ~ ~ ~ 0.5 0.5 0.5 0 5 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle flame ~ ~ ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ~ ~ ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ~ ~ ~ 0 0 0 0.2 15 force @a[scores={particle=1}]
 function zombie:skill/nether/ashes/meteor/particle
 
 playsound block.end_gateway.spawn record @a ~ ~ ~ 1.5 0

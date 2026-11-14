@@ -4,5 +4,5 @@ execute if entity @e[type=interaction,tag=area.lab.showcase.display,limit=1] run
 execute positioned 293.5 92.1 170.5 run function map:area/lab/monhan/showcase/display/init
 execute positioned 293.5 92.1 170.5 run function map:area/lab/monhan/showcase/display/particle
 scoreboard players set @e[type=interaction,tag=area.lab.showcase.display] area.showcase 0
-playsound block.glass.place record @a 293.5 92.1 170.5 1 1
+playsound entity.player.levelup record @s ~ ~ ~ 2 2
 function map:area/lab/monhan/page/main/show

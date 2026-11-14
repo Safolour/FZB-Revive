@@ -14,9 +14,6 @@ scoreboard players set enemy_count weapon.state 0
 execute at @s as @e[tag=mob,tag=hitable,distance=..5] at @s run function weapon:range/skill/skill/lightningrod/damage
 execute if score enemy_count weapon.state matches 1.. as @p[tag=perk_owner] run function map:perk/lightning_bullet/gold
 execute as @p[tag=perk_owner] run scoreboard players set @s weapon.use 0
-# 原版闪电：10 格内所有怪 1 秒抗性 V 挡掉 5 点伤害；抗性挡不住着火，1 tick 后清火
-execute at @s run effect give @e[tag=mob,distance=..10] resistance 1 4 true
-execute at @s run summon lightning_bolt ~ ~ ~
-execute at @s run summon marker ~ ~ ~ {Tags:["lightning_fire_clear"]}
-schedule function weapon:range/skill/skill/lightningrod/fire_clear 1t
+# 自定义群伤已在上面结算；落雷只保留视听表现，避免额外伤害和点燃寻路载体。
+execute at @s run function weapon:range/skill/skill/lightningrod/visual
 function map:perk/lightning_bullet/end

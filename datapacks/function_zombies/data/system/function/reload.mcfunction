@@ -1,4 +1,8 @@
 function system:time_calibration
+function mainlobby:setting/load
+
+# P5 independent XZ rooms also work in worlds initialized before this objective existed.
+scoreboard objectives add fl.room_order dummy
 
 # BEGIN REPLAY GUN REWARDS
 scoreboard players set gold weapon.gun_aurora 40
@@ -46,3 +50,18 @@ scoreboard players set gold_crit weapon.gun_weatheredcoppergun 19
 # BEGIN ECHO LOAD
 function weapon:range/skill/skill/echo/load
 # END ECHO LOAD
+
+# R40 third-wave timeout objective; safe to retain across reloads.
+scoreboard objectives add fl.p2.ashes dummy
+scoreboard objectives add fl.p2.shot dummy
+
+scoreboard objectives add fl.volley dummy
+
+scoreboard objectives add fl.shots dummy
+
+scoreboard objectives add fl.firewait dummy
+
+# R70 visual state is also initialized on a normal /reload.
+function zombie:skill/creation/origin/load
+# Migrate a previously loaded lab spawn list; the new eye cue runs at the midpoint.
+execute if data storage round mob_spawn_list[{round:70}].wave[{wave:0}].mob[{id:"machine/observereye/reset"}] run data remove storage round mob_spawn_list[{round:70}].wave[{wave:0}].mob[{id:"machine/observereye/reset"}]

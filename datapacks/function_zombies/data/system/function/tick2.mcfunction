@@ -1,4 +1,12 @@
 
+execute unless score @s gun.particle = @s gun.particle run scoreboard players operation @s gun.particle = @s particle
+execute unless score @s gun.particle = @s gun.particle run scoreboard players set @s gun.particle 0
+execute unless score @s setting = @s setting run scoreboard players set @s setting 0
+execute unless score @s setting.action = @s setting.action run scoreboard players set @s setting.action 0
+scoreboard players enable @s setting
+scoreboard players enable @s setting.action
+execute unless score @s setting matches 0 run function system:setting/open
+execute unless score @s setting.action matches 0 run function system:setting/action
 
 scoreboard players enable @s nightvision
 scoreboard players enable @s particle
@@ -21,4 +29,4 @@ tag @s add way_point_target
 
 scoreboard players operation uuid uuid = @s uuid
 scoreboard players set @e[tag=precedence] precedence 0
-execute as @e[tag=precedence,tag=!opened,distance=..5] run function system:tick2_0
+execute as @e[tag=precedence,tag=!opened,distance=..5] run function system:tick2_0

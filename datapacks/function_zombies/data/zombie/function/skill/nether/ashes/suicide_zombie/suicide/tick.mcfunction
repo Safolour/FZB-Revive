@@ -1,8 +1,12 @@
 scoreboard players add @s zombie.nether.ashes.suicidezombie.suicide 1
 
-particle white_ash ~ ~3 ~ 1 3 1 0 20 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle white_ash ~ ~3 ~ 1 3 1 0 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle white_ash ~ ~3 ~ 1 3 1 0 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle white_ash ~ ~3 ~ 1 3 1 0 10 force @a[scores={particle=1}]
 
-particle large_smoke ~ ~1 ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle large_smoke ~ ~1 ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ~ ~1 ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ~ ~1 ~ 0 0 0 0.1 1 force @a[scores={particle=1}]
 
 execute if score @s zombie.nether.ashes.suicidezombie.suicide matches 1..50 run function zombie:skill/nether/ashes/suicide_zombie/suicide/particle
 

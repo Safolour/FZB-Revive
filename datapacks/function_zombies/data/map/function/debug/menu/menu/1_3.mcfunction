@@ -44,19 +44,5 @@ tellraw @s [\
     {translate:zb.debug.menu.tellraw.absorptionconversion,click_event:{action:run_command,command:"function map:debug/menu/trigger/get_perk {perk:absorptionconversion}"}},{text:" "},\
     {translate:zb.debug.menu.tellraw.magnetic_bullet,click_event:{action:run_command,command:"function map:debug/menu/trigger/get_perk {perk:magnetic_bullet}"}}\
     ]
-# 加成：资源包里没有调试菜单的加成键，按钮直接用各加成的名字（zb.powerup.<id>.3），点了在脚下生成并马上拾取
-tellraw @s [\
-    {translate:zb.powerup.maxammo.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/maxammo"}},{text:" "},\
-    {translate:zb.powerup.instakill.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/instakill"}},{text:" "},\
-    {translate:zb.powerup.doublegold.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/doublegold"}},{text:" "},\
-    {translate:zb.powerup.triplegold.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/triplegold"}},{text:" "},\
-    {translate:zb.powerup.quadruplegold.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/quadruplegold"}}\
-    ]
-tellraw @s [\
-    {translate:zb.powerup.bonusgold.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/bonusgold"}},{text:" "},\
-    {translate:zb.powerup.shoppingspree.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/shoppingspree"}},{text:" "},\
-    {translate:zb.powerup.carpenter.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/carpenter"}},{text:" "},\
-    {translate:zb.powerup.purification.3,click_event:{action:run_command,command:"execute at @s run function map:powerup/summon/purification"}}\
-    ]
 
 tellraw @s [{translate:zb.debug.menu.tellraw.2}]

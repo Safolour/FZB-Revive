@@ -1,3 +1,6 @@
+scoreboard players set #invalid fzb.attr 0
+execute unless score #atk fzb.attr matches 100 run scoreboard players set #invalid fzb.attr 1
+execute unless score #def fzb.attr matches 100 run scoreboard players set #invalid fzb.attr 1
 
 #say start
 
@@ -21,4 +24,5 @@ function map:round/start_round/0
 function map:game/scoreboard/load0
 scoreboard objectives setdisplay sidebar game.scoreboard
 
+scoreboard players set #game_active round 1
 scoreboard players set tick round 1

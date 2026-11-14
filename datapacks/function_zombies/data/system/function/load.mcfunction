@@ -3,7 +3,7 @@ function system:game_stat/read/0
 
 gamerule maxCommandChainLength 2147483647
 gamerule maxCommandForkCount 2147483647
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 
 function bs.load:load
 function animated_java:load
@@ -16,6 +16,9 @@ scoreboard objectives add system.room dummy
 
 scoreboard objectives add number dummy
 
+scoreboard objectives add gun.particle dummy
+scoreboard objectives add setting trigger
+scoreboard objectives add setting.action trigger
 scoreboard objectives add particle trigger
 scoreboard objectives add particle0 dummy
 scoreboard objectives add quit trigger

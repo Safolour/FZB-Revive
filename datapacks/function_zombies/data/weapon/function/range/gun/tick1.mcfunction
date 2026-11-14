@@ -12,3 +12,7 @@ execute if entity @s[tag=aurora_proj] run function weapon:range/gun/gun/aurora/p
 execute if entity @s[tag=resonance_proj] run function weapon:range/gun/gun/resonance/proj/tick1
 execute if entity @s[tag=rainbowrocketlauncher_proj] run function weapon:range/gun/gun/rainbowrocketlauncher/proj/tick1
 execute if entity @s[tag=rainbowrocketlauncher_explosion] at @s run function weapon:range/gun/gun/rainbowrocketlauncher/explosion/tick1
+execute if entity @s[type=marker,tag=paradox.proj] at @s run function weapon:range/gun/gun/paradox/proj/tick
+execute if entity @s[type=item_display,tag=paradox.slash] at @s run function weapon:range/gun/gun/paradox/slash/tick
+execute if entity @s[type=marker,tag=paradox.room_control] at @s run function weapon:range/gun/gun/paradox/room/controller
+execute if entity @s[type=marker,tag=paradox.mark] at @s run function weapon:range/gun/gun/paradox/mark/tick

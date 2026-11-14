@@ -4,4 +4,3 @@ execute unless score timer powerup.timer.doublegold matches 1.. run function map
 execute unless score timer powerup.timer.triplegold matches 1.. run function map:powerup/bossbar/clean0 {powerup:triplegold}
 execute unless score timer powerup.timer.quadruplegold matches 1.. run function map:powerup/bossbar/clean0 {powerup:quadruplegold}
 execute unless score timer powerup.timer.shoppingspree matches 1.. run function map:powerup/bossbar/clean0 {powerup:shoppingspree}
-data modify storage powerup bossbar.name[0][0].with set value [{text:""}]

@@ -1,4 +1,10 @@
 
+# An absolute set supersedes pending healing. Disable its callbacks before
+# removing our sentinel effects, then start a fresh transaction.
+scoreboard players reset @s bs.hmod
+execute if data entity @s active_effects[{id:"minecraft:instant_health",amplifier:28b}] run effect clear @s minecraft:instant_health
+execute if data entity @s active_effects[{id:"minecraft:instant_damage",amplifier:-1b}] run effect clear @s minecraft:instant_damage
+scoreboard players set @s bs.ctx 1
 advancement revoke @s only bs.health:on_heal
 advancement revoke @s only bs.health:on_before_heal
 execute store result score @s bs.health0 run data get entity @s Health 100000

@@ -84,6 +84,8 @@ execute if entity @s[x=203,y=44,z=40,dx=26,dy=21,dz=23] run scoreboard players s
 
 #Portal Lab
 execute if entity @s[x=287,y=80,z=129,dx=27,dy=34,dz=44] run scoreboard players set @s area 1000
+# R40 核心及逃离通道；模板区域位于更东侧，不属于可游玩区域。
+execute if score type map matches 4 if entity @s[x=288,y=80,z=173,dx=102,dy=56,dz=131] run scoreboard players set @s area 1001
 
 return fail
 #测试

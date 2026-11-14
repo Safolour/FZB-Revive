@@ -3,6 +3,7 @@ execute if score @s health.invincible_timer matches 0.. run return run scoreboar
 #scoreboard players set @s health.damage_skill 0
 scoreboard players operation d health.operation = @s health.damage_skill
 scoreboard players set @s health.damage_skill 0
+execute if score round game.state matches 40 at @s if entity @e[type=marker,tag=firelord.p2.safe,distance=..5] run return run function zombie:skill/nether/firelord/p2/safe_player_damage
 function player_stat:health/get_damage/skill/operation
 # 金血先扣：倒地判定按 红血 + 金血，吃不完的部分再扣红血
 function player_stat:health/absorption/get

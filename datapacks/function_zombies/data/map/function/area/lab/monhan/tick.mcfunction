@@ -12,10 +12,14 @@ execute if score #blink monhan matches ..0 store result score #blink monhan run 
 # 浮动：每秒上下 0.1 格（录像里盔甲架 ±0.1）；每 4 tick 转向 8 格内最近的玩家
 scoreboard players add #bob monhan 1
 execute if score #bob monhan matches 40.. run scoreboard players set #bob monhan 0
-execute if score #bob monhan matches 0 as @e[type=item_display,tag=area.lab.monhan.head] run tp @s 291.5 93.7 170.5
-execute if score #bob monhan matches 0 as @e[type=text_display,tag=area.lab.monhan.name] run tp @s 291.5 94.1 170.5
-execute if score #bob monhan matches 20 as @e[type=item_display,tag=area.lab.monhan.head] run tp @s 291.5 93.8 170.5
-execute if score #bob monhan matches 20 as @e[type=text_display,tag=area.lab.monhan.name] run tp @s 291.5 94.2 170.5
+execute if score #bob monhan matches 0 if score #lab_phase map matches 0 as @e[type=item_display,tag=area.lab.monhan.head] run tp @s 291.5 93.7 170.5
+execute if score #bob monhan matches 0 if score #lab_phase map matches 1 as @e[type=item_display,tag=area.lab.monhan.head] run tp @s 339.5 93.7 170.5
+execute if score #bob monhan matches 0 if score #lab_phase map matches 0 as @e[type=text_display,tag=area.lab.monhan.name] run tp @s 291.5 94.1 170.5
+execute if score #bob monhan matches 0 if score #lab_phase map matches 1 as @e[type=text_display,tag=area.lab.monhan.name] run tp @s 339.5 94.1 170.5
+execute if score #bob monhan matches 20 if score #lab_phase map matches 0 as @e[type=item_display,tag=area.lab.monhan.head] run tp @s 291.5 93.8 170.5
+execute if score #bob monhan matches 20 if score #lab_phase map matches 1 as @e[type=item_display,tag=area.lab.monhan.head] run tp @s 339.5 93.8 170.5
+execute if score #bob monhan matches 20 if score #lab_phase map matches 0 as @e[type=text_display,tag=area.lab.monhan.name] run tp @s 291.5 94.2 170.5
+execute if score #bob monhan matches 20 if score #lab_phase map matches 1 as @e[type=text_display,tag=area.lab.monhan.name] run tp @s 339.5 94.2 170.5
 scoreboard players operation #turn monhan = #bob monhan
 scoreboard players operation #turn monhan %= 4 number
 execute if score #turn monhan matches 0 as @e[type=item_display,tag=area.lab.monhan.head] at @s if entity @p[distance=..8,gamemode=!spectator] facing entity @p[distance=..8,gamemode=!spectator] eyes run rotate @s ~ 0

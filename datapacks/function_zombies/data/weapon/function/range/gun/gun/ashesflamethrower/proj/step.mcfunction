@@ -1,7 +1,7 @@
 # 弹丸走一步（at 弹丸、朝向 = 飞行方向）：先在当前位置画粒子、检测命中，再前进 0.5 格
 execute unless block ~ ~ ~ #weapon:gun_penetrable run return run scoreboard players set @s weapon.range 0
 # 录像：particle ash ~ ~ ~ 0.05 0.05 0.05 0.1 3 force
-particle ash ~ ~ ~ 0.05 0.05 0.05 0.1 3 force @a[scores={particle=0..1}]
+particle ash ~ ~ ~ 0.05 0.05 0.05 0.1 3 force @a[scores={gun.particle=0..1},predicate=weapon:gun_particle_quality]
 execute if entity @s[tag=magnet] run function map:perk/magnetic_bullet/steer
 execute at @s run function weapon:range/gun/detect/hit_near
 execute as @e[tag=gethit] run function weapon:range/gun/gun/ashesflamethrower/proj/hit

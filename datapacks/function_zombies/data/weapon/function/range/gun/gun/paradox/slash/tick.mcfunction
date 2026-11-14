@@ -1,0 +1,16 @@
+scoreboard players add @s weapon.pd_time 1
+execute if score @s weapon.pd_time matches 1 run data modify entity @s transformation.scale set value [6f,15f,0.1f]
+execute if score @s weapon.pd_time matches 2 run data modify entity @s transformation.scale set value [6.7f,14.6f,0.1f]
+execute if score @s weapon.pd_time matches 3 run data modify entity @s transformation.scale set value [8.19f,14.2f,0.1f]
+execute if score @s weapon.pd_time matches 4 run data modify entity @s transformation.scale set value [10.58f,13.44f,0.1f]
+execute if score @s weapon.pd_time matches 5 run data modify entity @s transformation.scale set value [13.97f,12.68f,0.1f]
+execute if score @s weapon.pd_time matches 6 run data modify entity @s transformation.scale set value [18.47f,11.63f,0.1f]
+execute if score @s weapon.pd_time matches 7 run data modify entity @s transformation.scale set value [24.16f,10.58f,0.1f]
+execute if score @s weapon.pd_time matches 8 run data modify entity @s transformation.scale set value [29.85f,9.27f,0.1f]
+execute if score @s weapon.pd_time matches 9 run data modify entity @s transformation.scale set value [35.55f,7.97f,0.1f]
+execute if score @s weapon.pd_time matches 10 run data modify entity @s transformation.scale set value [41.24f,6.46f,0.1f]
+execute if score @s weapon.pd_time matches 11 run data modify entity @s transformation.scale set value [46.94f,4.96f,0.1f]
+execute if score @s weapon.pd_time matches 12 run data modify entity @s transformation.scale set value [52.63f,3.46f,0.1f]
+execute if score @s weapon.pd_time matches 13 run data modify entity @s transformation.scale set value [58.33f,1.96f,0.1f]
+execute if score @s weapon.pd_time matches 14 run data modify entity @s transformation.scale set value [64.03f,0.46f,0.1f]
+execute if score @s weapon.pd_time matches 15.. run kill @s

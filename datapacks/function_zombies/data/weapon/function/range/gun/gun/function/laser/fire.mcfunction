@@ -13,5 +13,6 @@ execute anchored eyes positioned ^ ^ ^1.25 run function weapon:range/gun/gun/fun
 execute anchored eyes positioned ^ ^ ^1.25 run summon marker ~ ~ ~ {Tags:["chosen","function_laser_ray"]}
 execute as @e[type=marker,tag=function_laser_ray,limit=1] at @s rotated as @p[scores={weapon.use=1..}] run function weapon:range/gun/gun/function/laser/ray_start
 kill @e[type=marker,tag=function_laser_ray]
+execute if entity @s[tag=weapon.laser_cap_dirty] run function weapon:range/gun/gun/function/laser/cap_store
 tag @s remove laser_shooter
 scoreboard players set @s weapon.use 0

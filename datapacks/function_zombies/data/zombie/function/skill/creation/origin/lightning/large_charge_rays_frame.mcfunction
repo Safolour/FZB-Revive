@@ -1,0 +1,4 @@
+$execute rotated $(yaw) 0 positioned ~ ~0.2 ~ run particle minecraft:dust_color_transition{from_color:[1,0,0],to_color:[1,1,1],scale:3.5} ^ ^ ^$(radius) 0 0 0 0 1 force @a[scores={system.room=4..,particle=0..1},distance=..80]
+$execute rotated $(yaw) 0 positioned ~ ~0.2 ~ run particle minecraft:dust_color_transition{from_color:[1,0,0],to_color:[1,1,1],scale:3.5} ^ ^ ^-$(radius) 0 0 0 0 1 force @a[scores={system.room=4..,particle=0..1},distance=..80]
+$execute rotated $(yaw) 0 positioned ~ ~0.2 ~ run particle minecraft:dust_color_transition{from_color:[1,0,0],to_color:[1,1,1],scale:3.5} ^$(radius) ^ ^ 0 0 0 0 1 force @a[scores={system.room=4..,particle=0..1},distance=..80]
+$execute rotated $(yaw) 0 positioned ~ ~0.2 ~ run particle minecraft:dust_color_transition{from_color:[1,0,0],to_color:[1,1,1],scale:3.5} ^-$(radius) ^ ^ 0 0 0 0 1 force @a[scores={system.room=4..,particle=0..1},distance=..80]

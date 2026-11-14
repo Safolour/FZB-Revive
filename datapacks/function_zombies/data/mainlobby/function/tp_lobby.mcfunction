@@ -1,5 +1,8 @@
 
 
+execute if score @s setting.env matches 1 run function mainlobby:setting/environment/leave
+# 返回大厅时停止本人的对局音乐，保留其他玩家的播放和公共循环。
+stopsound @s record
 scoreboard players operation @s health.heal_speed = basic health.heal_speed
 trigger waitlobby.book_trigger
 scoreboard players set @s waitlobby.book_trigger 0

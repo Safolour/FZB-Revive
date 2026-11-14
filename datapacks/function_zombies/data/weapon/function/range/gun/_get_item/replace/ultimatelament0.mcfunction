@@ -25,7 +25,8 @@ $item replace block 1 -60 1 container.26 with carrot_on_a_stick[\
         [{text:""}],\
         [{translate:"zb.item.gun.end.0"}],\
         [{translate:"zb.item.gun.end.1"}]\
-    ]\
+    ],\
+    enchantments={unbreaking:1},tooltip_display={hidden_components:[enchantments]}\
 ]
 $item replace entity @s container.$(slot) from block 1 -60 1 container.26
 item replace block 1 -60 1 container.26 with air

@@ -8,4 +8,5 @@ item replace block 1 -60 1 container.26 from entity @s weapon.mainhand
 execute store result block 1 -60 1 Items[{Slot:26b}].components."minecraft:custom_data".laser_threshold int 1 run scoreboard players get @s weapon.laser_threshold
 item replace entity @s weapon.mainhand from block 1 -60 1 container.26
 item replace block 1 -60 1 container.26 with air
+tag @s add weapon.laser_cap_dirty
 scoreboard players set @s inventory 1

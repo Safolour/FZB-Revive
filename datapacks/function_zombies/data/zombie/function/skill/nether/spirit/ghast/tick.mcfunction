@@ -2,7 +2,9 @@
 execute if entity @s[tag=skill.spiritghast.falling] run return run function zombie:skill/nether/spirit/ghast/tick0
 execute at @s run tp @s ~ ~ ~ facing entity @p[scores={stat.player=1},gamemode=adventure]
 
-particle soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.1 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.1 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.1 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.1 1 force @a[scores={particle=1}]
 
 scoreboard players add @s zombie.nether.spirit.ghast.skill_timer 1
 

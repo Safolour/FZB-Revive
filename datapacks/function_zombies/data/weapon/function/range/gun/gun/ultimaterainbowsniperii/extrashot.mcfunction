@@ -1,3 +1,5 @@
+execute unless score @s weapon.gun_ultimaterainbowsniperii_ammo matches 1.. run return 0
+execute unless score @s weapon.gun_ultimaterainbowsniperii_clip_ammo matches 1.. run return 0
 
 # 连发的后续子弹（weapon:range/gun/gun/extrashot/1 调用）：弹夹空了或在换弹就停
 execute if entity @s[scores={weapon.gun_ultimaterainbowsniperii_clip_ammo=0}] run return fail

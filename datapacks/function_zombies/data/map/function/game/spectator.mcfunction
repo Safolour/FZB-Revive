@@ -15,3 +15,6 @@ scoreboard players set @s inventory 1
 scoreboard players set @s inventory.lock 1
 execute if score type map matches 3 run tp @s 25 25 107 315 0
 execute if score type map matches 4 run tp @s 300 92 168 180 0
+execute if data storage map:music lava_sea.sound run function map:music/lava_sea/join with storage map:music lava_sea
+execute if data storage map:music firelord.sound run function map:music/firelord/join with storage map:music firelord
+execute if data storage map:music origin.sound run function map:music/firelord/join with storage map:music origin

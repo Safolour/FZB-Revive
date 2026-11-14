@@ -4,10 +4,19 @@ playsound entity.wither.spawn record @a ~ ~ ~ 10 2
 playsound item.totem.use record @a ~ ~ ~ 10 0
 playsound entity.allay.hurt record @a ~ ~ ~ 10 0
 
-particle soul_fire_flame ^ ^2 ^2 0 0 0 0.2 20 force @a[scores={particle=0}]
-particle explosion ^ ^2 ^2 0 0 0 3 5 force @a[scores={particle=0}]
-particle flash ^ ^2 ^2 0 0 0 0 1 force @a[scores={particle=0}]
-particle campfire_cosy_smoke ^ ^2 ^2 0 0 0 0.2 10 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle soul_fire_flame ^ ^2 ^2 0 0 0 0.2 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ^ ^2 ^2 0 0 0 0.2 20 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ^ ^2 ^2 0 0 0 0.2 10 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle explosion ^ ^2 ^2 0 0 0 3 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion ^ ^2 ^2 0 0 0 3 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion ^ ^2 ^2 0 0 0 3 2 force @a[scores={particle=1}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion ^ ^2 ^2 0 0 0 3 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle flash ^ ^2 ^2 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flash ^ ^2 ^2 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flash ^ ^2 ^2 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle campfire_cosy_smoke ^ ^2 ^2 0 0 0 0.2 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle campfire_cosy_smoke ^ ^2 ^2 0 0 0 0.2 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle campfire_cosy_smoke ^ ^2 ^2 0 0 0 0.2 5 force @a[scores={particle=1}]
 
 function zombie:skill/nether/guardian/warped/0/skill/eclipse/clear
 

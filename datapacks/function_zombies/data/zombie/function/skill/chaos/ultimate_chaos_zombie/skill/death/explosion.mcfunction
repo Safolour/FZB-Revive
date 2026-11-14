@@ -13,3 +13,20 @@ playsound block.end_gateway.spawn record @a ~ ~ ~ 2 1
 playsound block.end_gateway.spawn record @a ~ ~ ~ 2 0
 
 execute as @a[scores={stat.player=1},distance=..8] at @s run function zombie:skill/chaos/ultimate_chaos_zombie/skill/death/damage
+
+# Recording shows 15 TNT items at death.
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0
+function zombie:skill/chaos/ultimate_chaos_zombie/skill/tnt/throw/init0

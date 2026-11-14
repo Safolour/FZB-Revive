@@ -12,10 +12,20 @@ execute if entity @e[type=marker,distance=..2,tag=target] run function zombie:sk
 tag @e[type=marker,tag=target] remove target
 scoreboard players reset match zombie.nether.guardian.labyrinth.match
 
-particle end_rod ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=0..1}]
-execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=0}]
-execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.2 ^0.01 ^-0.1 0 0 0 0 1 force @a[scores={particle=0}]
-execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=0}]
-execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.2 ^0.001 ^-0.1 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle end_rod ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=0..1}]
+execute if score round game.state matches 40 run particle end_rod ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle end_rod ^ ^ ^0.0 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.2 ^0.01 ^-0.1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.2 ^0.01 ^-0.1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^0.2 ^0.01 ^-0.1 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.1 ^0.005 ^-0.05 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.2 ^0.001 ^-0.1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.2 ^0.001 ^-0.1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute unless entity @s[tag=skill.warpedguardian.labyrinth.spawn.0.negative] run particle end_rod ^-0.2 ^0.001 ^-0.1 0 0 0 0 1 force @a[scores={particle=1}]
 
 execute if score @s zombie.nether.guardian.labyrinth matches 300.. run kill @s

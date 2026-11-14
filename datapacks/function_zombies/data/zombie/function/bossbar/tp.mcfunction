@@ -10,3 +10,10 @@ execute at @s[type=zombie,tag=skill.lamda] run tp @n[type=armor_stand,scores={zo
 
 
 
+
+execute at @s[tag=firelord.p2.apostle] run tp @n[type=armor_stand,scores={zombie.bossbar_tp=2}] ~ ~3.4 ~
+execute at @s[tag=firelord.p4.commander] run tp @n[type=armor_stand,scores={zombie.bossbar_tp=2}] ~ ~3.4 ~
+execute at @s[tag=firelord.p2.safe] run tp @n[type=armor_stand,scores={zombie.bossbar_tp=2}] ~ ~3.54625 ~
+
+execute at @s[tag=skill.titan] run tp @n[type=armor_stand,scores={zombie.bossbar_tp=2}] ~ ~13 ~
+execute at @s[type=slime,tag=skill.titan.eclipse] run tp @n[type=armor_stand,scores={zombie.bossbar_tp=2}] ~ ~2 ~

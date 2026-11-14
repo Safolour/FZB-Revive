@@ -285,3 +285,22 @@ scoreboard objectives remove zombie.creation.cradle
 
 
 scoreboard objectives remove zombie.skill.damage
+
+scoreboard objectives remove fl.p2.ashes
+scoreboard objectives remove fl.p2.shot
+
+scoreboard objectives remove firelord.circle
+
+scoreboard objectives remove fl.volley
+
+scoreboard objectives remove fl.shots
+
+scoreboard objectives remove fl.firewait
+
+scoreboard objectives remove fl.safe.melee
+
+scoreboard objectives remove fl.circleclock
+
+scoreboard objectives remove fl.eclipse.v
+
+scoreboard objectives remove fl.sunflare

@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {Tags:["paradox.slash","gun"],billboard:"center",brightness:{block:15,sky:0},item:{id:"diamond",count:1,components:{"minecraft:item_model":"custom:slash0"}},transformation:{scale:[6.0f,15.0f,0.1f],translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}

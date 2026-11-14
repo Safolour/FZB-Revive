@@ -76,3 +76,4 @@ execute if entity @s[scores={weapon.use=10073}] run function weapon:range/gun/lo
 execute if entity @s[scores={weapon.use=10074}] run function weapon:range/gun/loop/particle/ultimateseason_summer
 execute if entity @s[scores={weapon.use=10075}] run function weapon:range/gun/loop/particle/season_winter
 execute if entity @s[scores={weapon.use=10076}] run function weapon:range/gun/loop/particle/ultimateseason_winter
+execute if entity @s[scores={weapon.use=10081}] run function weapon:range/gun/gun/paradox/proj/particles

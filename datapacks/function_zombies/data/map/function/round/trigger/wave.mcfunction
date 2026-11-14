@@ -13,8 +13,11 @@ execute if score round game.state matches 33 run function map:round/trigger/neth
 execute if score round game.state matches 35 run function map:round/trigger/giant
 execute if score round game.state matches 36 run function map:round/trigger/nether/dropships
 execute if score round game.state matches 39 run function map:round/trigger/nether/dropships
-execute if score round game.state matches 40 run function map:area/lab/floor/nether/final/0
+execute if score round game.state matches 40 if score wave round matches 0 run function map:area/lab/floor/nether/final/0
+execute if score round game.state matches 40 if score wave round matches 0 run function map:music/firelord/p1/start
 execute if score round game.state matches 41 run function map:area/lab/floor/laser/0
+execute if score round game.state matches 41 if score wave round matches 0 run function map:music/firelord/stop
+execute if score round game.state matches 41 if score wave round matches 0 run function map:door/portal_lab/core/init
 execute if score round game.state matches 42 run function map:area/lab/floor/laser/1
 execute if score round game.state matches 43 run function map:area/lab/floor/laser/2
 execute if score round game.state matches 44 run function map:area/lab/floor/laser/3
@@ -43,4 +46,5 @@ execute if score round game.state matches 66 run function map:area/lab/floor/las
 execute if score round game.state matches 67 run function map:area/lab/floor/laser/1
 execute if score round game.state matches 68 run function map:area/lab/floor/laser/2
 execute if score round game.state matches 69 run function map:area/lab/floor/laser/3
-execute if score round game.state matches 70 run function map:area/lab/floor/laser/4
+execute if score round game.state matches 70 if score wave round matches 0 run function map:area/lab/floor/origin/init
+execute if score round game.state matches 70 if score wave round matches 0 run function map:music/origin/start

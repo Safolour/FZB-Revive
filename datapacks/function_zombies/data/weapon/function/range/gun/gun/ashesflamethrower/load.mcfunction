@@ -7,8 +7,8 @@ scoreboard players set rate weapon.gun_ashesflamethrower 5
 scoreboard players set reload weapon.gun_ashesflamethrower 80
 # 射程 = 弹丸能走几个 0.5 格（每走一步减 1）
 scoreboard players set range weapon.gun_ashesflamethrower 12
-scoreboard players set gold weapon.gun_ashesflamethrower 0
-scoreboard players set gold_crit weapon.gun_ashesflamethrower -1
+scoreboard players set gold weapon.gun_ashesflamethrower -1
+scoreboard players set gold_crit weapon.gun_ashesflamethrower -3
 scoreboard players set punch weapon.gun_ashesflamethrower 50
 # 弹丸每 tick 走几个 0.5 格
 scoreboard players set speed weapon.gun_ashesflamethrower 1

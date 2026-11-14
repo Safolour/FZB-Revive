@@ -9,7 +9,7 @@ scoreboard players remove @a[scores={zombie.nether.lava.motion_timer=0..}] zombi
 scoreboard players remove @a[scores={zombie.nether.lava.damage_resettimer=1..}] zombie.nether.lava.damage_resettimer 1
 scoreboard players set @a[scores={zombie.nether.lava.damage_resettimer=0,zombie.nether.lava.damage_count=1..}] zombie.nether.lava.damage_count 0
 
-execute as @a[scores={stat.player=1},gamemode=adventure] at @s unless block ~ ~-0.25 ~ lava run effect clear @s levitation
+execute unless data storage map:r40 p5 unless data storage map:r40 p5_closed as @a[scores={stat.player=1},gamemode=adventure] at @s unless block ~ ~-0.25 ~ lava run effect clear @s levitation
 execute as @a[scores={stat.player=1},gamemode=adventure] at @s if block ~ ~0.025 ~ lava run function zombie:skill/nether/guardian/floor/lava/damage
 
 execute unless score stat zombie.nether.guardian matches 1.. run return fail

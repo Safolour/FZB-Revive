@@ -83,3 +83,4 @@ execute if items entity @s container.* *[custom_data~{tag:["rainbowsniper"]}] ru
 execute if items entity @s container.* *[custom_data~{tag:["ultimaterainbowsniper"]}] run function weapon:range/gun/slot/get_slot/1 {gun:ultimaterainbowsniper}
 execute if items entity @s container.* *[custom_data~{tag:["ultimaterainbowsniperii"]}] run function weapon:range/gun/slot/get_slot/1 {gun:ultimaterainbowsniperii}
 execute if items entity @s container.* *[custom_data~{tag:["ultimaterainbowsniperiii"]}] run function weapon:range/gun/slot/get_slot/1 {gun:ultimaterainbowsniperiii}
+execute if items entity @s container.* *[custom_data~{tag:["paradox"]}] run function weapon:range/gun/slot/get_slot/1 {gun:paradox}

@@ -1,6 +1,7 @@
 
 scoreboard objectives add map dummy
 scoreboard players set type map -1
+execute unless score #lab_phase map = #lab_phase map run scoreboard players set #lab_phase map 0
 scoreboard players set max_player map 5
 scoreboard players set min_player map 1
 scoreboard players set quickstart_player map 4

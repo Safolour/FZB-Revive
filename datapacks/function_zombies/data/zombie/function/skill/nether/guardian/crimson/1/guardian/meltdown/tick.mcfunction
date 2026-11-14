@@ -1,6 +1,8 @@
 execute unless entity @e[type=marker,tag=skill.guardian.floor.platform.marker.clear] unless entity @e[type=marker,tag=skill.guardian.floor.platform.marker.meltdown] run function zombie:skill/nether/guardian/crimson/1/guardian/meltdown/end
 
-particle dust_color_transition{from_color:[1,0,0],to_color:[1,1,0],scale:1.5} ^ ^0.3 ^-1 0.5 0.5 0.5 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle dust_color_transition{from_color:[1,0,0],to_color:[1,1,0],scale:1.5} ^ ^0.3 ^-1 0.5 0.5 0.5 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle dust_color_transition{from_color:[1,0,0],to_color:[1,1,0],scale:1.5} ^ ^0.3 ^-1 0.5 0.5 0.5 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle dust_color_transition{from_color:[1,0,0],to_color:[1,1,0],scale:1.5} ^ ^0.3 ^-1 0.5 0.5 0.5 0 1 force @a[scores={particle=1}]
 
 scoreboard players add @s zombie.nether.guardian.suspense1 1
 

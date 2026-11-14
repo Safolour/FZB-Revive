@@ -1,5 +1,8 @@
 
 
+# 先归还丢弃键产生的物品。旧连发实体会更新整个背包缓存，不能让它先存下暂时缺枪的背包。
+execute as @e[type=item,tag=!display,nbt={Item:{components:{"minecraft:custom_data":{tag:["clear"]}}}}] run function inventory:throw_item
+
 #say ========
 #tellraw @a [{"score":{"name":"tick","objective":"system.stat"}}]
 execute as @a run function weapon:range/gun/gun/aurora/sample_speed

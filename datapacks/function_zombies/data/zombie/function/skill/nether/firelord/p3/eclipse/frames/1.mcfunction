@@ -1,0 +1,6 @@
+data merge entity @e[type=block_display,tag=firelord.eclipse.layer0,distance=..1,sort=nearest,limit=1] {transformation:{translation:[0f,0f,0f],scale:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+data merge entity @e[type=block_display,tag=firelord.eclipse.layer1,distance=..1,sort=nearest,limit=1] {transformation:{translation:[0f,0f,0f],scale:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+data merge entity @e[type=block_display,tag=firelord.eclipse.layer2,distance=..1,sort=nearest,limit=1] {transformation:{translation:[0f,0f,0f],scale:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+data merge entity @e[type=block_display,tag=firelord.eclipse.layer3,distance=..1,sort=nearest,limit=1] {transformation:{translation:[0f,0f,0f],scale:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+data merge entity @e[type=block_display,tag=firelord.eclipse.layer4,distance=..1,sort=nearest,limit=1] {transformation:{translation:[0f,0f,0f],scale:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+data merge entity @e[type=block_display,tag=firelord.eclipse.layer5,distance=..1,sort=nearest,limit=1] {transformation:{translation:[0f,0f,0f],scale:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}

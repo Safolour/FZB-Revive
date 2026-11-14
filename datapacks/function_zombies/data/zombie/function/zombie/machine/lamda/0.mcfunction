@@ -3,7 +3,7 @@ summon zombie ~ ~ ~ {Invulnerable:1b,Silent:1b,Tags:["chosen","mob","skill.lamda
 
 effect give @e[type=zombie,tag=chosen] invisibility infinite 0 true
 
-scoreboard players set @n[type=zombie,tag=chosen] zombie.health 50000
+scoreboard players set @n[type=zombie,tag=chosen] zombie.health 80000
 scoreboard players set @n[type=zombie,tag=chosen] zombie.speed 23
 scoreboard players set @n[type=zombie,tag=chosen] zombie.armor 0
 scoreboard players set @n[type=zombie,tag=chosen] zombie.critical_extra 150

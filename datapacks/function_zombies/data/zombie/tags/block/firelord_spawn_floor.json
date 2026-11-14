@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diorite",
+    "minecraft:calcite",
+    "minecraft:crying_obsidian",
+    "minecraft:obsidian",
+    "minecraft:soul_soil",
+    "minecraft:pale_moss_block",
+    "minecraft:cracked_nether_bricks",
+    "minecraft:smooth_basalt",
+    "minecraft:tuff"
+  ]
+}

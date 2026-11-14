@@ -23,10 +23,16 @@ execute unless score @s zombie.nether.ashes.meteor.skill_timer = @s zombie.nethe
 execute if score @s zombie.nether.ashes.meteor.skill_timer matches 0..200 run return 0
 scoreboard players set @s zombie.nether.ashes.meteor.skill_timer 0
 
-particle witch ~ ~2 ~ 0 0 0 0.1 10 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle witch ~ ~2 ~ 0 0 0 0.1 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle witch ~ ~2 ~ 0 0 0 0.1 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle witch ~ ~2 ~ 0 0 0 0.1 5 force @a[scores={particle=1}]
 playsound entity.firework_rocket.launch record @a ~ ~ ~ 2 0
-particle flash ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=0}]
-particle explosion ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle flash ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flash ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flash ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle explosion ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion ~ ~2 ~ 0 0 0 0 1 force @a[scores={particle=1}]
 
 summon marker ~ ~17 ~ {Tags:["mob.skill","skill.meteor.0","chosen"]}
 

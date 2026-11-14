@@ -1,1 +1,0 @@
-function inventory:inventory/perk_clear

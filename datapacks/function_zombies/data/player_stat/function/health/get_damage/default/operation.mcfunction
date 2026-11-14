@@ -15,6 +15,12 @@ execute if score @s perk.absorption_resist matches 1.. run scoreboard players op
 scoreboard players operation damage health.operation *= damageresisted_extra health.operation
 scoreboard players operation damage health.operation /= 100 number
 
+# 属性面板：防御 x 对应受到 (200-x)% 的伤害。
+execute if score #def fzb.attr matches 20..180 run scoreboard players set #taken fzb.attr 200
+execute if score #def fzb.attr matches 20..180 run scoreboard players operation #taken fzb.attr -= #def fzb.attr
+execute if score #def fzb.attr matches 20..180 run scoreboard players operation damage health.operation *= #taken fzb.attr
+execute if score #def fzb.attr matches 20..180 run scoreboard players operation damage health.operation /= 100 number
+
 #总伤害
 scoreboard players operation damage0 health.operation = damage health.operation
 scoreboard players operation damage health.operation += d health.operation

@@ -1,3 +1,4 @@
+execute if items entity @s weapon.offhand *[custom_data~{gun:"paradox"}] if score @s inventory.lock matches 1 run tag @s add weapon.pd_f
 
 tag @s add inventory.changed
 execute if items entity @s weapon.offhand * run function interaction:zhf

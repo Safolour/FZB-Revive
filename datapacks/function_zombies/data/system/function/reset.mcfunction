@@ -1,4 +1,7 @@
 
+# Restore training overlays and save unclaimed menu items before UUIDs are removed.
+function mainlobby:setting/environment/reset
+function mainlobby:setting/gear/reset
 function system:game_stat/get/0
 function system:game_stat/store/0
 
@@ -16,6 +19,9 @@ scoreboard objectives remove system.room
 scoreboard objectives remove system.actionbar
 scoreboard objectives remove system.online
 scoreboard objectives remove number
+scoreboard objectives remove gun.particle
+scoreboard objectives remove setting
+scoreboard objectives remove setting.action
 scoreboard objectives remove particle
 scoreboard objectives remove particle0
 scoreboard objectives remove nightvision
@@ -52,6 +58,9 @@ function map:round/trigger/close/0
 forceload add 4 832
 forceload remove 300 160
 execute store result storage system root.month int 1 run scoreboard players get month system.stat
+# Preserve the lobby multipliers before the global scoreboard reset.
+execute if score #atk fzb.attr matches 20..180 store result storage fzb:attribute_panel atk int 1 run scoreboard players get #atk fzb.attr
+execute if score #def fzb.attr matches 20..180 store result storage fzb:attribute_panel def int 1 run scoreboard players get #def fzb.attr
 scoreboard players reset *
 execute store result score month system.stat run data get storage system root.month
 data remove storage system root

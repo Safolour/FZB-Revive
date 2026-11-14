@@ -1,8 +1,12 @@
 scoreboard players add @s zombie.nether.ashes.ashes 1
 #execute if score @s zombie.nether.ashes.ashes matches 2 run data merge entity @s {Fire:72000}
 
-particle ash ~ ~1 ~ 0.5 1 0.5 0.2 10 force @a[scores={particle=0}]
-particle white_ash ~ ~1 ~ 0.5 1 0.5 0.2 10 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle ash ~ ~1 ~ 0.5 1 0.5 0.2 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle ash ~ ~1 ~ 0.5 1 0.5 0.2 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle ash ~ ~1 ~ 0.5 1 0.5 0.2 5 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle white_ash ~ ~1 ~ 0.5 1 0.5 0.2 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle white_ash ~ ~1 ~ 0.5 1 0.5 0.2 10 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle white_ash ~ ~1 ~ 0.5 1 0.5 0.2 5 force @a[scores={particle=1}]
 
 execute if score @s zombie.nether.ashes.ashes matches 3 run function zombie:skill/nether/ashes/ashes/particle/0
 execute if score @s zombie.nether.ashes.ashes matches 4 run function zombie:skill/nether/ashes/ashes/particle/1

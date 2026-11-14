@@ -1,5 +1,7 @@
 
-particle soul_fire_flame ~ ~ ~ 0 0 0 0.05 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.05 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle soul_fire_flame ~ ~ ~ 0 0 0 0.05 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle soul_fire_flame ~ ~ ~ 0 0 0 0.05 1 force @a[scores={particle=1}]
 
 effect give @s slowness 2 1 false
 

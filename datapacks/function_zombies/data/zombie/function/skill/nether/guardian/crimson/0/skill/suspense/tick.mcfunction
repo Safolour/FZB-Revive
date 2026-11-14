@@ -1,5 +1,7 @@
 
-particle dust_color_transition{from_color:[1,0,0],to_color:[0.5,0.5,0],scale:1.5} ~ ~1 ~ 0.5 0.5 0.5 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle dust_color_transition{from_color:[1,0,0],to_color:[0.5,0.5,0],scale:1.5} ~ ~1 ~ 0.5 0.5 0.5 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle dust_color_transition{from_color:[1,0,0],to_color:[0.5,0.5,0],scale:1.5} ~ ~1 ~ 0.5 0.5 0.5 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle dust_color_transition{from_color:[1,0,0],to_color:[0.5,0.5,0],scale:1.5} ~ ~1 ~ 0.5 0.5 0.5 0 1 force @a[scores={particle=1}]
 
 scoreboard players operation match zombie.nether.guardian.suspense.match = @s zombie.nether.guardian.suspense.match
 

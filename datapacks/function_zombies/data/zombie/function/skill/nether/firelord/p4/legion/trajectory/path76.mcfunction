@@ -1,0 +1,13 @@
+execute if score @s zombie.motionx matches 0 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_0
+execute if score @s zombie.motionx matches 1 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_1
+execute if score @s zombie.motionx matches 2 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_2
+execute if score @s zombie.motionx matches 3 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_3
+execute if score @s zombie.motionx matches 4 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_4
+execute if score @s zombie.motionx matches 5 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_5
+execute if score @s zombie.motionx matches 6 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_6
+execute if score @s zombie.motionx matches 7 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_7
+execute if score @s zombie.motionx matches 8 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_8
+execute if score @s zombie.motionx matches 9 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_9
+execute if score @s zombie.motionx matches 10 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_10
+execute if score @s zombie.motionx matches 11 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_11
+execute if score @s zombie.motionx matches 12 run return run function zombie:skill/nether/firelord/p4/legion/trajectory/curve76_12

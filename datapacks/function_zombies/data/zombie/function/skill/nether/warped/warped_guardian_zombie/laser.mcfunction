@@ -1,7 +1,15 @@
-execute at @s run particle dripping_water ^ ^ ^0.9 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
-execute at @s run particle dripping_obsidian_tear ^ ^ ^0.125 0.05 0.05 0.05 0 2 force @a[scores={particle=0..1}]
-execute at @s run particle dripping_water ^ ^ ^0.25 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
-execute at @s run particle dripping_obsidian_tear ^ ^ ^0.375 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute at @s run particle dripping_water ^ ^ ^0.9 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_water ^ ^ ^0.9 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_water ^ ^ ^0.9 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute at @s run particle dripping_obsidian_tear ^ ^ ^0.125 0.05 0.05 0.05 0 2 force @a[scores={particle=0..1}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_obsidian_tear ^ ^ ^0.125 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_obsidian_tear ^ ^ ^0.125 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute at @s run particle dripping_water ^ ^ ^0.25 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_water ^ ^ ^0.25 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_water ^ ^ ^0.25 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute at @s run particle dripping_obsidian_tear ^ ^ ^0.375 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_obsidian_tear ^ ^ ^0.375 0.05 0.05 0.05 0 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle dripping_obsidian_tear ^ ^ ^0.375 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
 
 execute at @s run tp @s ^ ^ ^0.5
 scoreboard players add @s zombie.nether.warped.warpedguardianzombie.particle 1

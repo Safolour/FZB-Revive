@@ -1,3 +1,6 @@
+scoreboard objectives add fzb.attr dummy
+function mainlobby:attribute_panel/restore
+function mainlobby:setting/load
 
 scoreboard objectives add lobby.hologram dummy
  scoreboard players set min lobby.hologram 10

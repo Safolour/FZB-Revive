@@ -1,6 +1,10 @@
 
-execute at @s run particle flame ~ ~1 ~ 0 0 0 0.3 50 force @a[scores={particle=0}]
-execute at @s run particle large_smoke ~ ~1 ~ 0 0 0 0.3 50 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute at @s run particle flame ~ ~1 ~ 0 0 0 0.3 50 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle flame ~ ~1 ~ 0 0 0 0.3 50 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle flame ~ ~1 ~ 0 0 0 0.3 25 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute at @s run particle large_smoke ~ ~1 ~ 0 0 0 0.3 50 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle large_smoke ~ ~1 ~ 0 0 0 0.3 50 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute at @s run particle large_smoke ~ ~1 ~ 0 0 0 0.3 25 force @a[scores={particle=1}]
 
 execute at @s run playsound entity.evoker.prepare_summon record @a ~ ~ ~ 10 1.4
 execute at @s run playsound entity.guardian.death_land record @a ~ ~ ~ 10 0

@@ -1,0 +1,2 @@
+execute as @a[scores={stat.player=1},gamemode=adventure,tag=!firelord.circle.r1] at @s if entity @e[type=item_display,tag=firelord.circle.r1,distance=..2] run function zombie:skill/nether/firelord/circle/red_hurt
+execute as @a[scores={stat.player=1},gamemode=adventure,tag=!firelord.circle.r2] at @s if entity @e[type=item_display,tag=firelord.circle.r2,distance=..2] run function zombie:skill/nether/firelord/circle/red_hurt

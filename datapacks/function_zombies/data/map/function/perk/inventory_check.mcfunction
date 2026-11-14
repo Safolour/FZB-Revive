@@ -8,8 +8,8 @@ execute unless items entity @s[scores={perk.quick_fire=1}] container.* *[custom_
 execute if items entity @s[scores={perk.extra_health=0}] container.* *[custom_data~{tag:["extra_health"]}] run function map:perk/extra_health
 execute unless items entity @s[scores={perk.extra_health=1}] container.* *[custom_data~{tag:["extra_health"]}] run function map:perk/extra_health
 
-execute if items entity @s[scores={perk.fast_regeneration=0}] container.* *[custom_data~{tag:["fast_regeneration"]}] run function map:perk/fast_regeneration
-execute unless items entity @s[scores={perk.fast_regeneration=1}] container.* *[custom_data~{tag:["fast_regeneration"]}] run function map:perk/fast_regeneration
+# kit 会恢复 perk 标记，开局也会重置回血间隔；始终从当前物品同步派生值。
+function map:perk/fast_regeneration
 
 execute if items entity @s[scores={perk.no_knockback=0}] container.* *[custom_data~{tag:["no_knockback"]}] run function map:perk/no_knockback
 execute unless items entity @s[scores={perk.no_knockback=1}] container.* *[custom_data~{tag:["no_knockback"]}] run function map:perk/no_knockback

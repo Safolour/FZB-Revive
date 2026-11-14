@@ -1,9 +1,18 @@
+execute if entity @s[tag=skill.origin] run function zombie:skill/creation/origin/cancel
+execute if entity @s[tag=skill.origin,tag=origin.p3,tag=!origin.death.started] at @s run function zombie:skill/creation/origin/death/start
+execute if entity @s[type=slime,tag=skill.titan.eclipse] at @s run function zombie:skill/creation/titan/eclipse/death
+execute if entity @s[type=zombie,tag=skill.titan] at @s run function zombie:skill/creation/titan/transition/start
+execute if entity @s[tag=p5.raytarget] at @s run return run function zombie:skill/nether/firelord/p5/hazards/ray_target_death
+execute if entity @s[type=stray,tag=firelord.p4.commander] at @s run function zombie:skill/nether/firelord/p4/legion/commander_death
+execute if entity @s[type=zombie,tag=firelord.p4.legion.mob2] at @s run function zombie:skill/nether/firelord/p4/legion/soul_queue
+execute if entity @s[tag=firelord.p2.apostle] at @s run function zombie:skill/nether/firelord/p2/apostle_death
 
 execute if entity @s[tag=powerup] at @s unless entity @n[type=marker,tag=spawner,tag=portal,distance=..7] run function map:powerup/summon/powerup
 # 墙上传送门（portal_lab，北墙 299..301 100 127）门口的台子比地面高 8 格，捡不到：在门口 7 格内被打死的，掉落物挪到门前 6 格再往下落到地面
 execute if entity @s[tag=powerup] at @s at @n[type=marker,tag=spawner,tag=portal,distance=..7] positioned ^ ^ ^6 run function map:powerup/summon/powerup
 
 execute if entity @s[type=zombie,tag=skill.ultimatechaoszombie] at @s run function zombie:skill/chaos/ultimate_chaos_zombie/skill/death/explosion
+execute if entity @s[type=zombie,tag=skill.ultimatechaoszombie] if score round game.state matches 20 run function _:debug/mob_kill
 
 execute if entity @s[type=slime,tag=skill.chaosgolem] at @s run function zombie:skill/chaos/chaos_golem/skill/death/init
 

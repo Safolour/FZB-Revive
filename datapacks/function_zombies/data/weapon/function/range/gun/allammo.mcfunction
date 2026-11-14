@@ -78,3 +78,4 @@ function weapon:range/gun/gun/season_summer/allammo
 function weapon:range/gun/gun/ultimateseason_summer/allammo
 function weapon:range/gun/gun/season_winter/allammo
 function weapon:range/gun/gun/ultimateseason_winter/allammo
+function weapon:range/gun/gun/paradox/allammo

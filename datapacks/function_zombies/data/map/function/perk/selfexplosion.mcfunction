@@ -1,6 +1,8 @@
 # 原地爆炸（selfexplosion）：持有者倒地时由 player_stat:revive/down 调用（执行者 = 倒地的玩家，在清空背包之前）
 # 半径 5 格内的敌人受到 damage 点真实伤害（不看护甲）并被击退，每炸到一个敌人 +gold 金钱
-particle explosion_emitter ~ ~1 ~
+execute unless score round game.state matches 40 run particle explosion_emitter ~ ~1 ~
+execute if score round game.state matches 40 run particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 normal @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion_emitter ~ ~1 ~ 0 0 0 0 1 normal @a[scores={particle=1}]
 playsound entity.generic.explode record @a ~ ~ ~ 4 0.8
 tag @s add perk_exploder
 scoreboard players set #count perk 0

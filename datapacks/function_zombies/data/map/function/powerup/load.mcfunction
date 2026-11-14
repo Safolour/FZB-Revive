@@ -19,12 +19,8 @@ scoreboard objectives add powerup.gold dummy
  scoreboard players set bonusgold powerup.gold 500
  scoreboard players set carpenter powerup.gold 100
 
-bossbar add powerup ""
+function map:powerup/presentation/bar_setup {bar:"powerup",storage:"powerup"}
 bossbar set powerup players
-bossbar set powerup color pink
-bossbar set powerup max 100
-bossbar set powerup value 100
-bossbar set powerup style progress
 
 data modify storage powerup bossbar.name set value [[],{text:""}]
 

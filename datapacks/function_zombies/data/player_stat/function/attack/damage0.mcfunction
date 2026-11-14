@@ -1,12 +1,14 @@
+execute if entity @s[tag=firelord.p4.minion] if entity @e[type=stray,tag=firelord.p4.commander,scores={zombie.health=1..}] at @s run return run function zombie:skill/nether/firelord/p2/mob_hit
 
 scoreboard players set hit stat.attack.range 1
 function zombie:summon
-execute if entity @p[scores={weapon.use=1..,perk.frozen_bullet=1}] run scoreboard players operation @s perk.frozen_bullet_time = default perk.frozen_bullet
+execute if entity @s[tag=firelord.p2.apostle,tag=!firelord.p2.unlocked] at @s run return run function zombie:skill/nether/firelord/p2/mob_hit
 execute unless entity @s[tag=cantpuncher] run function player_stat:attack/punch
-execute if score timer powerup.timer.instakill matches 1.. if entity @s[tag=!cantinstakill] run scoreboard players operation gold stat.attack = instakill_gold stat.attack
-execute if score timer powerup.timer.doublegold matches 1.. run scoreboard players operation gold stat.attack *= 2 number
-execute if score timer powerup.timer.triplegold matches 1.. run scoreboard players operation gold stat.attack *= 3 number
-execute if score timer powerup.timer.quadruplegold matches 1.. run scoreboard players operation gold stat.attack *= 4 number
+function mainlobby:setting/powerup/select_attack
+execute if score #instakill setting.pu matches 1.. if entity @s[tag=!cantinstakill] run scoreboard players operation gold stat.attack = instakill_gold stat.attack
+execute if score #doublegold setting.pu matches 1.. run scoreboard players operation gold stat.attack *= 2 number
+execute if score #triplegold setting.pu matches 1.. run scoreboard players operation gold stat.attack *= 3 number
+execute if score #quadruplegold setting.pu matches 1.. run scoreboard players operation gold stat.attack *= 4 number
 
 execute unless entity @s[tag=nogold] as @p[scores={weapon.use=1..}] if items entity @s weapon *[custom_data~{tag:["gold"]}] run function player_stat:attack/gold
 
@@ -32,11 +34,13 @@ execute if entity @s[type=#zombie:undead] run scoreboard players operation smite
 scoreboard players operation damage0 stat.attack += smite stat.attack
 
 scoreboard players operation @s zombie.health -= damage0 stat.attack
+execute if entity @s[tag=setting.dummy] run function zombie:take_damage0
 
-execute if score timer powerup.timer.instakill matches 1.. run scoreboard players set @s[tag=!cantinstakill] zombie.health 0
+function mainlobby:setting/powerup/select_attack
+execute if score #instakill setting.pu matches 1.. run scoreboard players set @s[tag=!cantinstakill] zombie.health 0
 
 execute if entity @s[scores={zombie.health=1..}] run return fail
 execute as @p[scores={weapon.use=1..}] run loot replace block 1 -60 1 container.0 loot weapon:playerhead
 data modify entity @s data.killed set from block 1 -60 1 Items[{Slot:0b}].components."minecraft:profile".name
 item replace block 1 -60 1 container.0 with air
-scoreboard players add @p[scores={weapon.use=1..}] zombie.kill 1
+execute unless entity @s[tag=p5.raytarget] run scoreboard players add @p[scores={weapon.use=1..}] zombie.kill 1

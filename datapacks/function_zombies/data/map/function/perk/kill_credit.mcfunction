@@ -6,5 +6,5 @@ execute unless entity @a[tag=perk_owner] run return fail
 execute as @p[tag=perk_owner] run loot replace block 1 -60 1 container.0 loot weapon:playerhead
 data modify entity @s data.killed set from block 1 -60 1 Items[{Slot:0b}].components."minecraft:profile".name
 item replace block 1 -60 1 container.0 with air
-scoreboard players add @p[tag=perk_owner] zombie.kill 1
+execute unless entity @s[tag=p5.raytarget] run scoreboard players add @p[tag=perk_owner] zombie.kill 1
 tag @a[tag=perk_owner] remove perk_owner

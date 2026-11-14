@@ -1,8 +1,10 @@
 
+function mainlobby:setting/powerup/select_match
+execute as @p[tag=target] run function mainlobby:setting/powerup/select
 scoreboard players operation gold window = repair_gold window
-execute if score timer powerup.timer.doublegold matches 1.. run scoreboard players operation gold window *= 2 number
-execute if score timer powerup.timer.triplegold matches 1.. run scoreboard players operation gold window *= 3 number
-execute if score timer powerup.timer.quadruplegold matches 1.. run scoreboard players operation gold window *= 4 number
+execute if score #doublegold setting.pu matches 1.. run scoreboard players operation gold window *= 2 number
+execute if score #triplegold setting.pu matches 1.. run scoreboard players operation gold window *= 3 number
+execute if score #quadruplegold setting.pu matches 1.. run scoreboard players operation gold window *= 4 number
 execute as @p[tag=target] run function map:window/addgold
 
 playsound entity.zombie.attack_wooden_door record @a ~ ~ ~ 1 1 0

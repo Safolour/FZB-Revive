@@ -1,4 +1,3 @@
-
 tag @s[tag=gethit1] remove gethit1
 tag @s[tag=gethit2] remove gethit2
 

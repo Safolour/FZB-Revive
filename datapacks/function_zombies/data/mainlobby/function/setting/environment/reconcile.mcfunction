@@ -1,0 +1,3 @@
+function mainlobby:setting/environment/context
+function mainlobby:setting/environment/reconcile_session with storage mainlobby:setting_environment context
+data remove storage mainlobby:setting_environment context

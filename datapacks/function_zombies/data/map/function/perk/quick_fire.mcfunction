@@ -78,3 +78,4 @@ function map:perk/quick_fire0 {gun:rainbowsniper}
 function map:perk/quick_fire0 {gun:ultimaterainbowsniper}
 function map:perk/quick_fire0 {gun:ultimaterainbowsniperii}
 function map:perk/quick_fire0 {gun:ultimaterainbowsniperiii}
+function map:perk/quick_fire0 {gun:paradox}

@@ -1,0 +1,17 @@
+scoreboard players add @s zombie.skill_timer 1
+execute if score @s zombie.skill_timer matches 1 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/1"
+execute if score @s zombie.skill_timer matches 2 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/2"
+execute if score @s zombie.skill_timer matches 3 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/3"
+execute if score @s zombie.skill_timer matches 4 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/4"
+execute if score @s zombie.skill_timer matches 5 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/5"
+execute if score @s zombie.skill_timer matches 6 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/6"
+execute if score @s zombie.skill_timer matches 7 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/7"
+execute if score @s zombie.skill_timer matches 8 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/8"
+execute if score @s zombie.skill_timer matches 9 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/9"
+execute if score @s zombie.skill_timer matches 10 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/10"
+execute if score @s zombie.skill_timer matches 11 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/11"
+execute if score @s zombie.skill_timer matches 12 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/12"
+execute if score @s zombie.skill_timer matches 13 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/13"
+execute if score @s zombie.skill_timer matches 14 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/14"
+execute if score @s zombie.skill_timer matches 15 run data modify entity @s item.components."minecraft:item_model" set value "custom:particle/nightmare/15"
+execute if score @s zombie.skill_timer matches 16.. run kill @s

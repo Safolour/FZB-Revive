@@ -1,5 +1,7 @@
 
 function map:game/scoreboard/time
+execute if score type map matches 4 unless data storage map:r40 core_door_active run function map:door/portal_lab/core/attach
+execute if score type map matches 4 if data storage map:r40 core_door_active run function map:door/portal_lab/core/maintain
 
 scoreboard players add global.second game.timer 1
 scoreboard players add second game.timer 1

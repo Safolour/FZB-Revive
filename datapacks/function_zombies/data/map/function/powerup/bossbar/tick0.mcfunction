@@ -1,2 +1,2 @@
-
-$data modify storage powerup bossbar.name[-1] set value {text:" §7- §a$(time)s§r"}
+data modify storage powerup root.storage set value "powerup"
+function map:powerup/presentation/bar_tail with storage powerup root

@@ -2,7 +2,9 @@
 function zombie:skill/nether/guardian/warped/0/skill/fire/addwarped
 
 #particle flash ~ ~1 ~
-particle snowflake ~ ~1 ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle snowflake ~ ~1 ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle snowflake ~ ~1 ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle snowflake ~ ~1 ~ 0 0 0 0.1 1 force @a[scores={particle=1}]
 
 effect give @s slowness 2 1 false
 

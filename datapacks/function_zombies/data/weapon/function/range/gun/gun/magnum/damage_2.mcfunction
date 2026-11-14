@@ -1,3 +1,4 @@
+execute if entity @s[tag=firelord.p2.ghast] run return run function weapon:range/gun/detect/invulnerable_hit
 
 scoreboard players operation punch weapon.state = punch weapon.gun_magnum
 scoreboard players operation damage weapon.state = damage weapon.gun_magnum

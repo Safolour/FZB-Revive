@@ -1,0 +1,7 @@
+# 由 工具/gen_setting_gear.py 生成；请修改生成器后重新生成。
+clear @s *[custom_data~{tag:["setting_gear"]}]
+execute unless score @s system.room matches 2 run return fail
+data modify storage mainlobby:setting_gear grant set value {slot:0}
+function weapon:melee/_get_item/replace/knife with storage mainlobby:setting_gear grant
+data remove storage mainlobby:setting_gear grant
+playsound block.note_block.pling ambient @s ~ ~ ~ 0.6 1.5

@@ -1,3 +1,4 @@
+execute if entity @s[tag=firelord.p2.ghast] run return run function weapon:range/gun/detect/invulnerable_hit
 
 scoreboard players operation @s weapon.gun_ultimatesnowballcannon_time = time weapon.gun_ultimatesnowballcannon_time
 scoreboard players operation uuid weapon.gun_uuid = @n[tag=chosen,tag=projectile] weapon.gun_uuid

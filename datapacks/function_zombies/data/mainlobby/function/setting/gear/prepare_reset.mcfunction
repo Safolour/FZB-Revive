@@ -1,0 +1,29 @@
+# 由 工具/gen_setting_gear.py 生成；请修改生成器后重新生成。
+# A global reset clears player inventories too. Escrow foreign stacks before it runs.
+execute if items entity @s container.0 * unless items entity @s container.0 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.1 * unless items entity @s container.1 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.2 * unless items entity @s container.2 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.3 * unless items entity @s container.3 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.4 * unless items entity @s container.4 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.5 * unless items entity @s container.5 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.6 * unless items entity @s container.6 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.7 * unless items entity @s container.7 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.8 * unless items entity @s container.8 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.9 * unless items entity @s container.9 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.10 * unless items entity @s container.10 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.11 * unless items entity @s container.11 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.12 * unless items entity @s container.12 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.13 * unless items entity @s container.13 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.14 * unless items entity @s container.14 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.15 * unless items entity @s container.15 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.16 * unless items entity @s container.16 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.17 * unless items entity @s container.17 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.18 * unless items entity @s container.18 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.19 * unless items entity @s container.19 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.20 * unless items entity @s container.20 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.21 * unless items entity @s container.21 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.22 * unless items entity @s container.22 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.23 * unless items entity @s container.23 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.24 * unless items entity @s container.24 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.25 * unless items entity @s container.25 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart
+execute if items entity @s container.26 * unless items entity @s container.26 *[custom_data~{tag:["setting_gear"]}] run return run function mainlobby:setting/gear/recover_cart

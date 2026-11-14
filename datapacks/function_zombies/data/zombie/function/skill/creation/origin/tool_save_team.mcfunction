@@ -1,0 +1,13 @@
+# 队伍不在Zombie存档NBT中；按工程固定的怪物队伍选择器保存，不读取虚构的Team字段。
+execute if entity @s[team=mob] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "mob"
+execute if entity @s[team=collision] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "collision"
+execute if entity @s[team=creeper] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "creeper"
+execute if entity @s[team=firelord_glow] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "firelord_glow"
+execute if entity @s[team=fl_eclipse] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "fl_eclipse"
+execute if entity @s[team=zombie.creation.destruction] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "zombie.creation.destruction"
+execute if entity @s[team=zombie.creation.resonance] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "zombie.creation.resonance"
+execute if entity @s[team=zombie.crimsonguardian] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "zombie.crimsonguardian"
+execute if entity @s[team=zombie.crimsonguardian.blaze] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "zombie.crimsonguardian.blaze"
+execute if entity @s[team=zombie.warpedguardian] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "zombie.warpedguardian"
+execute if entity @s[team=zombie.suspenseguardian] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "zombie.suspenseguardian"
+execute if entity @s[team=origin.laser.dark_red] run data modify entity @e[tag=origin.tool.state.new,limit=1] data.team set value "origin.laser.dark_red"

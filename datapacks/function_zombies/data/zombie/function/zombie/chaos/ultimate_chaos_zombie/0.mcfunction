@@ -5,7 +5,7 @@ equipment:{head:{id:leather_helmet,count:1,components:{dyed_color:16711680}},che
 scoreboard players set @n[type=zombie,tag=chosen] zombie.portalmotion_min 140
 scoreboard players set @n[type=zombie,tag=chosen] zombie.portalmotion_max 150
 
-scoreboard players set @n[type=zombie,tag=chosen] zombie.health 20000
+scoreboard players set @n[type=zombie,tag=chosen] zombie.health 40000
 scoreboard players set @n[type=zombie,tag=chosen] zombie.speed 25
 scoreboard players set @n[type=zombie,tag=chosen] zombie.armor 30
 scoreboard players set @n[type=zombie,tag=chosen] zombie.critical_extra 150

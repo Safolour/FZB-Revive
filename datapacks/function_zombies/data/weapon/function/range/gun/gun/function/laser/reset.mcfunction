@@ -1,5 +1,4 @@
 scoreboard objectives remove weapon.function_charge
-scoreboard objectives remove weapon.laser_cap
 scoreboard objectives remove weapon.laser_threshold
 scoreboard objectives remove weapon.laser_s
 scoreboard objectives remove weapon.laser_t

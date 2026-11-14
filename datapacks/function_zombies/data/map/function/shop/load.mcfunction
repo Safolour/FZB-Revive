@@ -61,3 +61,10 @@ scoreboard objectives add shop.menu_item dummy
 scoreboard objectives add shop.menu_tier dummy
 scoreboard objectives add shop.actionbar dummy
 scoreboard objectives add shop.ultimate dummy
+execute in minecraft:overworld if entity @e[type=minecraft:marker,tag=shop,tag=perk,x=280,y=80,z=120,dx=87,dy=40,dz=60,limit=1] run function map:shop/summon/portal_lab/perk_display
+# Reload also repairs the shell/minecart spawn order, keeping opened player menus intact.
+execute in minecraft:overworld as @e[type=minecraft:marker,tag=shop,tag=perk,x=280,y=80,z=120,dx=87,dy=40,dz=60,limit=1] at @s run function map:shop/summon/portal_lab/perk0
+
+execute in minecraft:overworld as @e[type=minecraft:armor_stand,tag=shop,tag=armor,tag=display,x=292,y=93,z=130.5,distance=..2] run attribute @s minecraft:scale base set 0.7
+# Reload may rebuild vending displays at their source coordinates during P2.
+execute in minecraft:overworld run function map:game/phase_positions

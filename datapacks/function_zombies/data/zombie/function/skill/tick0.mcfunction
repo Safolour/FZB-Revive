@@ -1,3 +1,5 @@
+execute if entity @s[type=marker,tag=firelord.p2.safe] at @s run function zombie:skill/nether/firelord/p2/safe_tick
+execute if entity @s[type=ghast,tag=firelord.p2.patrol,tag=!firelord.p5.chase] at @s run function zombie:skill/nether/firelord/p2/ghast/tick
 
 execute if entity @s[type=item,tag=skill.bruh] at @s run function zombie:skill/bruh/tick0
 execute if entity @s[type=text_display,tag=skill.bruh] at @s run function zombie:skill/bruh/tick1
@@ -116,13 +118,31 @@ execute if entity @s[type=marker,tag=skill.lamda.laser.marker0] at @s run functi
 execute if entity @s[type=block_display,tag=skill.lamda.laser.1] at @s run function zombie:skill/machine/lamda/skill/laser/1/tick
 execute if entity @s[type=marker,tag=skill.lamda.laser.2] at @s run function zombie:skill/machine/lamda/skill/laser/2/tick
 
+execute if entity @s[type=armor_stand,tag=skill.firelord.fire] at @s run function zombie:skill/nether/firelord/fire/tick
+
+execute if entity @s[type=marker,tag=skill.firelord.travel] at @s run function zombie:skill/nether/firelord/travel/tick
+
+execute if entity @s[type=marker,tag=firelord.spawn.wait] at @s run function zombie:skill/nether/firelord/travel/wait
+
+execute if entity @s[type=marker,tag=skill.firelord.beam] at @s run function zombie:skill/nether/firelord/beam/tick
+
+execute if entity @s[type=block_display,tag=skill.firelord.travel_flame] at @s run function zombie:skill/nether/firelord/travel/flame_tick
 
 
+execute if entity @s[type=item_display,tag=firelord.p2.laser_rune] at @s run function zombie:skill/nether/firelord/p2/laser_rune_tick
 
+execute if entity @s[type=marker,tag=firelord.beam.delay] at @s run function zombie:skill/nether/firelord/beam/delay
 
+execute if entity @s[type=marker,tag=firelord.eclipse.trigger] at @s run function zombie:skill/nether/firelord/p3/eclipse/trigger
+execute if entity @s[type=marker,tag=firelord.eclipse.ball] at @s run function zombie:skill/nether/firelord/p3/eclipse/ball_tick
 
+execute if entity @s[type=marker,tag=firelord.p3.meteor.controller] at @s run function zombie:skill/nether/firelord/p3/meteor/controller
+execute if entity @s[type=item_display,tag=firelord.p3.meteor.mark] at @s run function zombie:skill/nether/firelord/p3/meteor/mark_tick
+execute if entity @s[type=block_display,tag=firelord.p3.meteor.rock] at @s run function zombie:skill/nether/firelord/p3/meteor/rock_tick
 
+execute if entity @s[type=marker,tag=firelord.p4.meteor.clock] at @s run function zombie:skill/nether/firelord/p4/meteor/clock
+execute if entity @s[type=marker,tag=firelord.p4.meteor.wave] at @s run function zombie:skill/nether/firelord/p4/meteor/wave
 
+execute if entity @s[type=marker,tag=firelord.p4.legion.clock] at @s run function zombie:skill/nether/firelord/p4/legion/clock
 
-
-
+execute if entity @s[type=marker,tag=firelord.p4.legion.soul.delay] at @s run function zombie:skill/nether/firelord/p4/legion/soul_tick

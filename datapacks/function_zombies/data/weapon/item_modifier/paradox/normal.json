@@ -1,0 +1,141 @@
+[
+ {
+  "function": "minecraft:set_lore",
+  "lore": [
+   {
+    "translate": "zb.item.gun.paradox.lore.0"
+   },
+   {
+    "translate": "zb.item.gun.paradox.lore.1"
+   },
+   {
+    "translate": "zb.item.gun.paradox.lore.2"
+   },
+   {
+    "text": ""
+   },
+   {
+    "translate": "zb.item.gun.0",
+    "with": [
+     {
+      "text": "10.0",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.1",
+    "with": [
+     {
+      "text": "1000",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.2",
+    "with": [
+     {
+      "text": "99",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.3",
+    "with": [
+     {
+      "text": "1.00",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.4",
+    "with": [
+     {
+      "text": "1.50",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.5",
+    "with": [
+     {
+      "text": "24",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.6",
+    "with": [
+     {
+      "text": "6",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.9",
+    "with": [
+     {
+      "translate": "zb.item.gun.infinity"
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.30",
+    "with": [
+     {
+      "text": "50.0",
+      "color": "green",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "text": ""
+   },
+   {
+    "translate": "zb.item.gun.end.0"
+   },
+   {
+    "translate": "zb.item.gun.end.1"
+   },
+   {
+    "translate": "zb.item.gun.paradox.lore.4",
+    "with": [
+     {
+      "keybind": "key.swapOffhand",
+      "color": "yellow",
+      "italic": false
+     }
+    ]
+   },
+   {
+    "translate": "zb.item.gun.paradox.lore.5",
+    "with": [
+     {
+      "keybind": "key.drop",
+      "color": "yellow",
+      "italic": false
+     }
+    ]
+   }
+  ],
+  "mode": "replace_all"
+ },
+ {
+  "function": "minecraft:set_custom_data",
+  "tag": "{paradox_version:3}"
+ }
+]

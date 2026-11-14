@@ -1,8 +1,16 @@
 
-execute if entity @s[tag=particle] run particle flame ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=0..1}]
-execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=0..2}]
-execute if entity @s[tag=particle] run particle flame ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
-execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=particle] run particle flame ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=0..1}]
+execute if score round game.state matches 40 run execute if entity @s[tag=particle] run particle flame ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=particle] run particle flame ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=0..2}]
+execute if score round game.state matches 40 run execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^ 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=particle] run particle flame ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if entity @s[tag=particle] run particle flame ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=particle] run particle flame ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run execute if entity @s[tag=particle] run particle dripping_lava ^ ^ ^0.5 0.05 0.05 0.05 0 1 force @a[scores={particle=1}]
 
 scoreboard players add @s zombie.nether.guardian.laser.particle 1
 execute if score @s zombie.nether.guardian.laser.particle matches 7.. run scoreboard players set @s zombie.nether.guardian.laser.particle 0

@@ -1,0 +1,6 @@
+particle dust_color_transition{from_color:[0.6196,0.9608,1.0000],to_color:[0.1373,0.5373,0.7843],scale:1.5} ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if predicate zombie:firelord_medium_particle run particle dust_color_transition{from_color:[0.6196,0.9608,1.0000],to_color:[0.1373,0.5373,0.7843],scale:1.5} ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
+particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if predicate zombie:firelord_medium_particle run particle soul_fire_flame ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
+particle sculk_soul ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if predicate zombie:firelord_medium_particle run particle sculk_soul ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]

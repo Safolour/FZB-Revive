@@ -1,7 +1,11 @@
 scoreboard players add @s zombie.nether.ashes.meteor.skill_timer 1
 
-particle flame ~ ~ ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
-particle large_smoke ~ ~ ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle flame ~ ~ ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ~ ~ ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ~ ~ ~ 0 0 0 0.1 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle large_smoke ~ ~ ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ~ ~ ~ 0 0 0 0.1 2 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle large_smoke ~ ~ ~ 0 0 0 0.1 1 force @a[scores={particle=1}]
 tp @s ^ ^ ^1
 
 scoreboard players operation match zombie.nether.ashes.meteor.match = @s zombie.nether.ashes.meteor.match

@@ -1,7 +1,15 @@
+execute at @s run function mainlobby:intro_monhan/player_tick
 
 execute positioned 0 -55 0 if entity @s[distance=..10] run function mainlobby:tp_lobby
 
 # 主大厅：手上拿着枪时开启交互实体（左键装填靠它），空手时关掉；交互实体会挡住 NPC 箱子矿车的右键
+# 设置区持武器时也启用左键换弹/近战/技能；precedence 矿车附近由 interaction:tick0 自动退让。
+execute if entity @s[scores={system.room=2}] if items entity @s weapon.mainhand *[custom_data~{tag:["gun"]}] run scoreboard players set @s interaction.state 1
+execute if entity @s[scores={system.room=2}] if items entity @s weapon.mainhand *[custom_data~{tag:["melee"]}] run scoreboard players set @s interaction.state 1
+execute if entity @s[scores={system.room=2}] if items entity @s weapon.mainhand *[custom_data~{tag:["skill"]}] run scoreboard players set @s interaction.state 1
+execute if entity @s[scores={system.room=2}] unless items entity @s weapon.mainhand *[custom_data~{tag:["gun"]}] unless items entity @s weapon.mainhand *[custom_data~{tag:["melee"]}] unless items entity @s weapon.mainhand *[custom_data~{tag:["skill"]}] run function mainlobby:interaction/off
+# Attribute buttons need their native right/left click while a weapon is held.
+execute if entity @s[scores={system.room=2}] at @s if entity @e[type=interaction,tag=fzb.attr.panel,distance=..4] run function mainlobby:interaction/off
 execute if entity @s[scores={system.room=1}] if items entity @s weapon.mainhand *[custom_data~{tag:["gun"]}] run scoreboard players set @s interaction.state 1
 execute if entity @s[scores={system.room=1}] unless items entity @s weapon.mainhand *[custom_data~{tag:["gun"]}] run function mainlobby:interaction/off
 

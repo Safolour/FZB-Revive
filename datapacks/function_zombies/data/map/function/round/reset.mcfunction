@@ -10,6 +10,8 @@ data remove storage round mob_spawn_list
 data remove storage round powerup
 
 function map:music/lava_sea/stop
+function map:music/firelord/stop
+function map:music/origin/stop
 
 schedule clear map:round/trigger/open/0_0
 schedule clear map:round/trigger/open/0_1

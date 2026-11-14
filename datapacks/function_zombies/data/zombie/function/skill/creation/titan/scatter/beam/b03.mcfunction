@@ -1,0 +1,10 @@
+# 10/20 replay packet batch 10042098; 9 direct particles.
+particle minecraft:end_rod 356.216156 94.900751 141.577133 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 356.356282 94.529182 141.880905 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 356.496408 94.157614 142.184678 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 356.636534 93.786046 142.488451 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 356.77666 93.414478 142.792224 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 356.916786 93.04291 143.095997 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 357.056912 92.671342 143.39977 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 357.197038 92.299774 143.703543 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]
+particle minecraft:end_rod 357.337164 91.928205 144.007316 0.1 0.1 0.1 100000 1 force @a[scores={system.room=4..,particle=0}]

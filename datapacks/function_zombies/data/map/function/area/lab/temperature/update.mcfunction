@@ -1,5 +1,6 @@
 # 温度（temperature0）变化后调用：显示器、侧边栏、档位效果、播报
 function map:area/lab/temperature/display/update
+execute if data storage map:r40 p5_closed run return run function map:area/lab/temperature/suspend_effects
 
 # 档位：0 = 0-20 正常 / 1 = 21-40 枪伤 -30% / 2 = 41-60 生命值不自然恢复 / 3 = 61-80 枪伤 -60% / 4 = 81-99 持续受伤 / 5 = 100 死亡
 # 效果向上累加（41°C 以上仍然 -30% 枪伤，61°C 起换成 -60%）

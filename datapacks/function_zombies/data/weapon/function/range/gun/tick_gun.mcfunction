@@ -78,3 +78,4 @@ function weapon:range/gun/gun/season_summer/tick
 function weapon:range/gun/gun/ultimateseason_summer/tick
 function weapon:range/gun/gun/season_winter/tick
 function weapon:range/gun/gun/ultimateseason_winter/tick
+function weapon:range/gun/gun/paradox/tick

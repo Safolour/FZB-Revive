@@ -1,0 +1,1 @@
+$tellraw @s [{text:"[伤害测试] ",color:"gold",bold:true},{text:"本次伤害 ",color:"gray",bold:false},{text:"$(total).$(total_frac)",color:"white",bold:true},{text:"  |  ",color:"dark_gray",bold:false},{text:"平均 DPS ",color:"gray"},{text:"$(whole).$(frac)",color:"aqua",bold:true}]

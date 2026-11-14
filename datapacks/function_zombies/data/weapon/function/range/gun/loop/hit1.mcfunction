@@ -2,6 +2,7 @@
 tag @s remove gethit
 
 function weapon:range/gun/detect/hitbox
+execute if entity @s[tag=firelord.p2.ghast,tag=hit] run return run function weapon:range/gun/detect/invulnerable_hit
 execute if entity @s[tag=hit] run scoreboard players set @n[type=!marker,tag=chosen,tag=projectile] weapon.range -447
 execute if entity @n[tag=snowballcannon,scores={weapon.use=10009}] run function weapon:range/gun/gun/snowballcannon/hit
 execute if entity @n[tag=rocketlauncher,scores={weapon.use=10011}] run function weapon:range/gun/gun/rocketlauncher/hit

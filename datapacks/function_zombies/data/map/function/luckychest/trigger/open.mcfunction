@@ -4,6 +4,9 @@ scoreboard players set @s luckychest.state 2
 scoreboard players operation @s luckychest.timer = roll_time luckychest
 scoreboard players set shoppingspree luckychest 0
 execute if score timer powerup.timer.shoppingspree matches 0.. run scoreboard players set shoppingspree luckychest 1
+execute if entity @p[tag=chosen,scores={system.room=2}] run scoreboard players set shoppingspree luckychest 0
+execute if entity @p[tag=chosen,scores={system.room=2}] if score #timer_shoppingspree setting.pu matches 1.. run scoreboard players set shoppingspree luckychest 1
+scoreboard players operation @s setting.pu = shoppingspree luckychest
 # 保底计数 / Monhan 定向（map:area/lab/monhan/lucky/draw）
 function map:area/lab/monhan/lucky/draw
 scoreboard players operation @p[tag=chosen] gold -= @s luckychest.price

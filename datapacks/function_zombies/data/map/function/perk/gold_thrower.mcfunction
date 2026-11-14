@@ -1,9 +1,9 @@
 # 金钱丢失（gold_thrower）：持有者每 tick 由 map:perk/tick 调用
 # 其余部分：伤害 -10%×玩家数（perk/hit/damage_extra）、命中金钱同比例减少（perk/gold_thrower/gold_cut）、
 # 击杀时概率掉落三倍金钱，手持金质武器（custom_data 带 golden）掉四倍（perk/gold_thrower/drop）
-execute store result score #cut perk.gold_thrower if entity @a[scores={system.room=4}]
-scoreboard players operation #cut perk.gold_thrower *= cut_per_player perk.gold_thrower
-scoreboard players operation #cut perk.gold_thrower < cut_max perk.gold_thrower
+execute unless entity @s[scores={system.room=2}] store result score #cut perk.gold_thrower if entity @a[scores={system.room=4}]
+execute unless entity @s[scores={system.room=2}] run scoreboard players operation #cut perk.gold_thrower *= cut_per_player perk.gold_thrower
+execute unless entity @s[scores={system.room=2}] run scoreboard players operation #cut perk.gold_thrower < cut_max perk.gold_thrower
 
 # 左键（挥手、换弹都算）-1 金钱
 execute if score @s interaction.left_click matches 1.. run function map:perk/gold_thrower/swing

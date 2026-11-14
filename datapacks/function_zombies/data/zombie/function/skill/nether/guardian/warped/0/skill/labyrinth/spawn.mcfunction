@@ -21,8 +21,12 @@ scoreboard players set @e[type=marker,tag=skill.warpedguardian.labyrinth.spawn.1
 execute as @e[type=marker,tag=skill.warpedguardian.labyrinth.spawn.1,tag=chosen,scores={zombie.nether.guardian.labyrinth.match=1..}] at @s run tp @s ~ ~9 ~
 tag @e[type=marker,tag=skill.warpedguardian.labyrinth.spawn.1,tag=chosen,scores={zombie.nether.guardian.labyrinth.match=1..}] remove chosen
 
-particle end_rod ~ ~1 ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
-particle flash ~ ~1 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle end_rod ~ ~1 ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle end_rod ~ ~1 ~ 0 0 0 0.2 30 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle end_rod ~ ~1 ~ 0 0 0 0.2 15 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle flash ~ ~1 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flash ~ ~1 ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flash ~ ~1 ~ 0 0 0 0 1 force @a[scores={particle=1}]
 
 playsound entity.ghast.warn record @a ~ ~ ~ 10 0
 

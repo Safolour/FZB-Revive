@@ -1,8 +1,12 @@
 
 scoreboard players add @s zombie.nether.guardian.twilight 1
 execute as @s at @s run tp @s ^ ^ ^1
-particle scrape ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0..1}]
-particle scrape ^ ^ ^-0.5 0 0 0 0 1 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle scrape ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0..1}]
+execute if score round game.state matches 40 run particle scrape ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle scrape ~ ~ ~ 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle scrape ^ ^ ^-0.5 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle scrape ^ ^ ^-0.5 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle scrape ^ ^ ^-0.5 0 0 0 0 1 force @a[scores={particle=1}]
 
 execute unless block ~ ~ ~ #weapon:gun_penetrable run scoreboard players set @s zombie.nether.guardian.twilight 100
 

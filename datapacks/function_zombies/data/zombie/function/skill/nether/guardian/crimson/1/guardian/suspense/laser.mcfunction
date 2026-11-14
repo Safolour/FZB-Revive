@@ -3,10 +3,20 @@ function zombie:skill/nether/guardian/crimson/1/guardian/suspense/rotation
 
 playsound entity.lightning_bolt.thunder record @a ~ ~ ~ 1.5 2
 
-particle flash ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=0}]
-particle explosion ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=0}]
-particle flame ^ ^0.3 ^1 0 0 0 0.1 5 force @a[scores={particle=0}]
-particle end_rod ^ ^0.3 ^1 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute unless score round game.state matches 40 run particle flash ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flash ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flash ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle explosion ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle explosion ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=0}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle explosion ^ ^0.3 ^1 0 0 0 0 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle flame ^ ^0.3 ^1 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ^ ^0.3 ^1 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle flame ^ ^0.3 ^1 0 0 0 0.1 2 force @a[scores={particle=1}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle flame ^ ^0.3 ^1 0 0 0 0.1 1 force @a[scores={particle=1}]
+execute unless score round game.state matches 40 run particle end_rod ^ ^0.3 ^1 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle end_rod ^ ^0.3 ^1 0 0 0 0.1 5 force @a[scores={particle=0}]
+execute if score round game.state matches 40 run particle end_rod ^ ^0.3 ^1 0 0 0 0.1 2 force @a[scores={particle=1}]
+execute if score round game.state matches 40 if predicate zombie:firelord_medium_particle run particle end_rod ^ ^0.3 ^1 0 0 0 0.1 1 force @a[scores={particle=1}]
 
 scoreboard players set loop zombie.nether.guardian.suspense.laser 0
 
